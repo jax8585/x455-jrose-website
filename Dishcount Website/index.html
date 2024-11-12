@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/CSS/w3.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mhr1vgg.css" />
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+  </head>
+  <body>
+    <!--Navbar at top-->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-black w3-padding w3-card"
+        style="display: flex; align-items: center"
+      >
+        <a href="#home" class="w3-bar-item w3-button logo">dishcount</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small" style="margin-left: auto">
+          <a
+            href="#restaurants"
+            class="w3-bar-item w3-button button-header spaced"
+            >restaurants</a
+          >
+          <a href="#merch" class="w3-bar-item w3-button button-header spaced"
+            >merch</a
+          >
+        </div>
+        <div
+          class="w3-right w3-hide-medium w3-hide-large"
+          style="margin-left: auto"
+        >
+          <a
+            href="javascript:void(0)"
+            class="w3-bar-item w3-button button-header spaced"
+            onclick="w3_open()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="w3-sidebar w3-bar-block w3-sand w3-card w3-animate-right w3-hide-medium w3-hide-large"
+      id="mySidebar"
+      style="display: none"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <!-- changed -->
+      <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Food</a
+      >
+      <a href="#merch" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Merch</a
+      >
+      <a href="#restaurants" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Restaurants</a
+      >
+      <!-- added -->
+      <a href="#cuttery" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Cuttery</a
+      >
+      <a href="#chef" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Chef</a
+      >
+    </nav>
+    <section id="home">
+      <div style="padding-top: 63px">
+        <div class="video-container">
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/qLPWfxCT0Xc?si=-tDoQQHhlKMBOwJU&autoplay=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div style="padding-top: 5%" class="flex-container padding-sides-5">
+        <div>
+          <img
+            class="w3-image roundsquare"
+            src="/img/jason-leung-poI7DelFiVA-unsplash.jpg"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall">
+            <h2>Standouts</h2>
+            <p>
+              This is a description of the type of restaurants in this category.
+              This will have a little bit of information about what kind of
+              restaurant this is and what kind of food you are looking for.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare"
+            src="/img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall">
+            <h2>Casual Joints</h2>
+            <p>
+              This is a description of the type of restaurants in this category.
+              This will have a little bit of information about what kind of
+              restaurant this is and what kind of food you are looking for.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare"
+            src="/img/roman-bozhko-OXXsAafHDeo-unsplash (1).jpg"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall">
+            <h2>Coffee and Tea</h2>
+            <p>
+              This is a description of the type of restaurants in this category.
+              This will have a little bit of information about what kind of
+              restaurant this is and what kind of food you are looking for.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare"
+            src="/img/patrick-tomasso-GXXYkSwndP4-unsplash (1).jpg"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall">
+            <h2>Bars</h2>
+            <p>
+              This is a description of the type of restaurants in this category.
+              This will have a little bit of information about what kind of
+              restaurant this is and what kind of food you are looking for.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare"
+            src="/img/jay-wennington-N_Y88TWmGwA-unsplash (1).jpg"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall">
+            <h2>Fine Dining</h2>
+            <p>
+              This is a description of the type of restaurants in this category.
+              This will have a little bit of information about what kind of
+              restaurant this is and what kind of food you are looking for.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare"
+            src="/img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall">
+            <h2>Street Food</h2>
+            <p>
+              This is a description of the type of restaurants in this category.
+              This will have a little bit of information about what kind of
+              restaurant this is and what kind of food you are looking for.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="restaurants">
+      <div>
+        <h1 class="w3-center bigcaps" style="padding-bottom: 6vh">standouts</h1>
+        <div class="w3-padding-large flex-row">
+          <!-- carousel -->
+          <div class="padding-sides-5">
+            <i
+              onclick="prevDiv()"
+              class="fa-solid fa-arrow-left"
+              style="font-size: 10vh"
+            ></i>
+          </div>
+          <div class="overlay-container" style="width: 50%">
+            <!-- begin carousel slide show -->
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
+                style="width: 100%"
+              />
+              <div class="text-overlay">speakeasy lounge</div>
+            </div>
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/patrick-tomasso-GXXYkSwndP4-unsplash (1).jpg"
+                style="width: 100%"
+              />
+              <div class="text-overlay">speakeasy lounge 2</div>
+            </div>
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/anomaly-WWesmHEgXDs-unsplash.jpg"
+                style="width: 100%"
+              />
+              <div class="text-overlay">speakeasy lounge 3</div>
+            </div>
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
+                style="width: 100%"
+              />
+              <div class="text-overlay">speakeasy lounge 4</div>
+            </div>
+            <!-- end carousel slide show -->
+
+            <!-- begin carousel thumbnail -->
+            <!-- add thumbnail buttons for selecting a slide to show -->
+          </div>
+          <div class="padding-sides-5">
+            <i
+              onclick="nextDiv()"
+              class="fa-solid fa-arrow-right"
+              style="font-size: 10vh"
+            ></i>
+          </div>
+        </div>
+        <div class="flex-row" style="padding-top: 10vh">
+          <div class="padding-sides-xsmall">
+            <img
+              class="roundsquare w3-opacity w3-hover-opacity-off"
+              src="./img/roman-bozhko-OXXsAafHDeo-unsplash (1).jpg"
+              style="width: 15vw; cursor: pointer"
+              onclick="currentDiv(1)"
+            />
+          </div>
+          <div class="padding-sides-xsmall">
+            <img
+              class="roundsquare w3-opacity w3-hover-opacity-off"
+              src="./img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
+              style="width: 15vw; cursor: pointer"
+              onclick="currentDiv(2)"
+            />
+          </div>
+          <div class="padding-sides-xsmall">
+            <img
+              class="roundsquare w3-opacity w3-hover-opacity-off"
+              src="./img/anomaly-WWesmHEgXDs-unsplash.jpg"
+              style="width: 15vw; cursor: pointer"
+              onclick="currentDiv(3)"
+            />
+          </div>
+          <div class="padding-sides-xsmall">
+            <img
+              class="roundsquare w3-opacity w3-hover-opacity-off"
+              src="./img/patrick-tomasso-GXXYkSwndP4-unsplash (1).jpg"
+              style="width: 15vw; cursor: pointer"
+              onclick="currentDiv(4)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row" id="utensil">
+        <h1
+          class="w3-center bigcaps"
+          style="padding-bottom: 6vh; padding-top: 10vh"
+        >
+          the list
+        </h1>
+
+        <!-- add sortable table -->
+        <!-- step 1: create a table with 4 columns -->
+        <!-- step 2: add javascrip and jquery to make the table sortable -->
+        <div
+          style="
+            height: 150vh;
+            overflow: auto;
+            margin-left: 3%;
+            margin-right: 3%;
+          "
+        >
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr class="w3-black">
+                <th style="width: 40%">photo</th>
+                <th>restaurant</th>
+                <th>type</th>
+                <th>rating</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  src="./img/anomaly-WWesmHEgXDs-unsplash.jpg"
+                  class="rectangle-image"
+                />
+              </td>
+              <td>Cookware</td>
+              <td>Skillet</td>
+              <td style="width: auto; height: auto">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">4</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
+                  class="rectangle-image"
+                />
+              </td>
+              <td>Hand Tool</td>
+              <td>Wooden Spoon</td>
+              <td style="width: auto">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">2</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  src="./img/roman-bozhko-OXXsAafHDeo-unsplash (1).jpg"
+                  class="rectangle-image"
+                />
+              </td>
+              <td>Hand Tool</td>
+              <td>Citrus Reamer</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
+                />
+              </td>
+              <td>Electronic Appliance</td>
+              <td>Stand Mixer</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
+                />
+              </td>
+              <td>Electronic Appliance</td>
+              <td>Stand Mixer</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="merch">
+      <h1 style="padding-top: 5%" class="bigcaps w3-center">merch</h1>
+      <div style="padding-top: 2%" class="flex-container padding-sides-5">
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="/img/jason-leung-poI7DelFiVA-unsplash.jpg"
+            onclick="document.getElementById('modal01').style.display='block'"
+            style="cursor: pointer"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="/img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
+            onclick="document.getElementById('modal02').style.display='block'"
+            style="cursor: pointer"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="/img/roman-bozhko-OXXsAafHDeo-unsplash (1).jpg"
+            onclick="document.getElementById('modal03').style.display='block'"
+            style="cursor: pointer"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="/img/patrick-tomasso-GXXYkSwndP4-unsplash (1).jpg"
+            onclick="document.getElementById('modal04').style.display='block'"
+            style="cursor: pointer"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="/img/jay-wennington-N_Y88TWmGwA-unsplash (1).jpg"
+            onclick="document.getElementById('modal05').style.display='block'"
+            style="cursor: pointer"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="/img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
+            onclick="document.getElementById('modal06').style.display='block'"
+            style="cursor: pointer"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+      </div>
+      <!--modals for lightbox grid-->
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Alice Waters - 1</h4>
+          <img
+            src="./img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+      <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">April Bloomfield</h4>
+          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">April Bloomfield</h4>
+          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">April Bloomfield</h4>
+          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">April Bloomfield</h4>
+          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">April Bloomfield</h4>
+          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="w3-content">
+        <h1 class="bigcaps w3-center" style="padding-bottom: 1%">
+          san francisco
+        </h1>
+        <h2>Fisherman's Warf</h2>
+        <p>
+          No trip to San Francisco is complete without a visit to Fisherman’s
+          Wharf. Known for its scenic waterfront and historic piers, this area
+          is a haven for seafood lovers. Be sure to try the famous clam chowder
+          in a sourdough bread bowl at Boudin Bakery. For fresh, local Dungeness
+          crab, visit the crab stands along the pier or enjoy a meal at Alioto's
+          or Fog Harbor Fish House. For a sweet treat, don’t forget the creamy
+          fudge from Ghirardelli Square.
+        </p>
+        <figure class="w3-padding-16">
+          <img
+            src="/img/eugen-kucheruk-TvcjBk5y0wU-unsplash.jpg"
+            class="w3-image w3-padding-16"
+          />
+          <figcaption class="w3-center">
+            A super burrito at our favorite spot in the Mission.
+          </figcaption>
+        </figure>
+        <h2>Chinatown</h2>
+        <p>
+          San Francisco’s Chinatown is the oldest in North America and offers a
+          culinary journey like no other. Wander through its bustling streets
+          and you’ll find everything from dim sum to Cantonese roast meats. Good
+          Mong Kok Bakery is perfect for grab-and-go dim sum, while Z & Y
+          Restaurant is famous for its spicy Sichuan dishes. Looking for an
+          authentic experience? Head to R&G Lounge for their signature salt and
+          pepper crab.
+        </p>
+        <h2>Mission District</h2>
+        <p>
+          The Mission District is a vibrant mix of Latino culture and trendy
+          food spots. Known for its Mexican taquerias, this is the place to go
+          for a great burrito. La Taqueria and El Farolito have long been local
+          favorites. Beyond Mexican cuisine, the area also boasts hip, modern
+          eateries like Tartine Bakery, where the freshly baked pastries are
+          worth the wait, and Dandelion Chocolate, a small-batch chocolate
+          factory offering unique confections.
+        </p>
+        <figure class="w3-padding-16">
+          <img
+            src="/img/aaron-kato-zcoDYal9GkQ-unsplash.jpg"
+            class="w3-image w3-padding-16"
+          />
+          <figcaption class="w3-center">
+            The Painted Ladies, across from Alamo square in the Hayes
+            Valley/Lower Haight area.
+          </figcaption>
+        </figure>
+        <h2>North Beach</h2>
+
+        <p>
+          San Francisco’s North Beach, also known as "Little Italy," is a
+          charming neighborhood brimming with Italian cafés, bakeries, and
+          restaurants. Start your day with an espresso and a pastry from Caffè
+          Greco or Liguria Bakery, known for its delicious focaccia. For a
+          classic Italian meal, dine at Tony's Pizza Napoletana, a favorite for
+          its award-winning pizzas, or visit Sotto Mare for authentic Italian
+          seafood dishes.
+        </p>
+
+        <h2>Haight-Ashbury</h2>
+
+        <p>
+          Known for its historic role in the 1960s counterculture movement,
+          Haight-Ashbury offers a unique mix of eclectic eats. VeganBurg serves
+          up plant-based burgers that even carnivores rave about, while The
+          Alembic is perfect for craft cocktails and a creative menu. For a
+          nostalgic sweet treat, stop by Ben & Jerry’s on Haight Street for ice
+          cream.
+        </p>
+
+        <h2>SoMa (South of Market)</h2>
+
+        <p>
+          If you're looking for upscale dining and innovative cuisine, SoMa is
+          the place to be. This area is home to some of the city’s finest
+          restaurants, like Mourad, which serves modern Moroccan-inspired dishes
+          in a sleek setting, and Benu, a three-Michelin-starred spot that
+          blends Asian flavors with fine dining flair. For casual bites, Little
+          Skillet serves up Southern comfort food with favorites like fried
+          chicken and waffles.
+        </p>
+        <figure class="w3-padding-16">
+          <img
+            src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+            class="w3-image w3-padding-16"
+          />
+          <figcaption class="w3-center">
+            Gyoza at a Chinese restaurant in the Richmond.
+          </figcaption>
+        </figure>
+        <h2>The Marina</h2>
+        <p>
+          The Marina District offers beautiful waterfront views along with a
+          buzzing food scene. Chestnut Street is the heart of this neighborhood,
+          packed with trendy cafes and restaurants. Stop by A16 for wood-fired
+          pizzas and Southern Italian fare, or grab a healthy smoothie from
+          Pressed Juicery. If you're in the mood for seafood, The Tipsy Pig
+          offers a gastropub experience with dishes like fish and chips and
+          craft beers.
+        </p>
+
+        <h2>The Richmonddd</h2>
+
+        <p>
+          San Francisco’s Richmond District is an under-the-radar food haven
+          offering an international range of flavors. Clement Street is lined
+          with Asian restaurants, from Thai and Vietnamese to Korean and
+          Chinese. Stop by Burma Superstar for Burmese tea leaf salad and
+          flavorful curries. If you’re in the mood for sushi, Kabuto Sushi
+          offers some of the freshest fish in the city, while Lokma offers a
+          taste of Turkey with its Mediterranean brunch options.
+        </p>
+      </div>
+    </section>
+    <section>
+      <!-- accordion -->
+      <!-- step 1: add accordion button -->
+      <!-- step 2: add accordion content -->
+      <!-- step 3: add accordion javascript in <script> below -->
+      <h1 class="bigcaps w3-center" style="padding-bottom: 1%">faqs</h1>
+      <div class="w3-content">
+        <!-- create an area to hold both accordion button and content -->
+        <div id="first-accordian" class="padding-vertical-bottom">
+          <!-- add accordion button here -->
+          <!-- set button to 'accordion1' below -->
+          <button
+            onclick="myAccordion('accordion1')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn1"
+          >
+            <h4 class="slab-header">
+              How do you decide on a rating for each restaurant?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <!-- add accordion content here -->
+          <div id="accordion1" class="w3-hide w3-container">
+            <p>
+              Vegetables are parts of plants that are consumed by humans or
+              other animals as food. The original meaning is still commonly used
+              and is applied to plants collectively to refer to all edible plant
+              matter.
+            </p>
+          </div>
+        </div>
+        <!-- repeat the steps to create another accordion button and content here -->
+        <!-- make sure set the button id to 'accordion2' below -->
+        <!-- each button id should be unique -->
+        <div id="second-accordian" class="padding-vertical-bottom">
+          <button
+            onclick="myAccordion('accordion2')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn2"
+          >
+            <h4 class="slab-header">
+              What is another question for an FAQ?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <div id="accordion2" class="w3-hide w3-container">
+            <p>
+              Simple fleshy fruits from apples to berries to watermelon; simple
+              dry fruits including beans and rice, coconuts and carrots;
+              aggregate fruits including strawberries, raspberries,
+              blackberries, pawpaw.
+            </p>
+          </div>
+        </div>
+        <div id="third-accordian" class="padding-vertical-bottom">
+          <button
+            onclick="myAccordion('accordion3')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn3"
+          >
+            <h4 class="slab-header">
+              What is another question for an FAQ?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <div id="accordion3" class="w3-hide w3-container">
+            <p>
+              Simple fleshy fruits from apples to berries to watermelon; simple
+              dry fruits including beans and rice, coconuts and carrots;
+              aggregate fruits including strawberries, raspberries,
+              blackberries, pawpaw.
+            </p>
+          </div>
+        </div>
+        <div id="fourth-accordian" class="padding-vertical-bottom">
+          <button
+            onclick="myAccordion('accordion4')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn4"
+          >
+            <h4 class="slab-header">
+              What is another question for an FAQ?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <div id="accordion4" class="w3-hide w3-container">
+            <p>
+              Simple fleshy fruits from apples to berries to watermelon; simple
+              dry fruits including beans and rice, coconuts and carrots;
+              aggregate fruits including strawberries, raspberries,
+              blackberries, pawpaw.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // begin added for mobile version
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // end added for mobile version
+    </script>
+    <script>
+      // begin added for carousel
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        //setTimeout(carousel, 10000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+      function nextDiv() {
+        myIndex++;
+        if (myIndex > 3) {
+          myIndex = 0;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+      function prevDiv() {
+        myIndex--;
+        if (myIndex < 0) {
+          myIndex = 3;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+    </script>
+    <script>
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+    </script>
+    <script>
+      // begin added for accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // end added for accordion
+    </script>
+    <script
+      src="https://kit.fontawesome.com/401f46c6c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
