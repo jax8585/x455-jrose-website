@@ -266,7 +266,7 @@ hr {
 
 .button-header {
   font-family: "futura-pt", sans-serif;
-  font-size: 25px;
+  font-size: 22px;
 }
 .small-caps {
   font-variant: small-caps;
@@ -345,7 +345,7 @@ td {
   .w3-content {
     margin-right: auto;
     margin-left: auto;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   h2 {
@@ -396,6 +396,7 @@ figure {
 .slab-header {
   font-family: "adelle", serif;
   font-weight: 300;
+  white-space: wrap;
 }
 .roundsquare {
   border-radius: 10%;
