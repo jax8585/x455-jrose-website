@@ -24,7 +24,10 @@
       >
         <a href="#home" class="w3-bar-item w3-button logo">dishcount</a>
         <!-- Right-sided navbar links. Hide them on small screens -->
-        <div class="w3-right w3-hide-small" style="margin-left: auto">
+        <div
+          class="w3-right w3-hide-small w3-hide-medium"
+          style="margin-left: auto"
+        >
           <a
             href="#restaurants"
             class="w3-bar-item w3-button button-header spaced"
@@ -44,11 +47,14 @@
             class="w3-bar-item w3-button button-header spaced"
             >rating guide</a
           >
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
         </div>
-        <div
-          class="w3-right w3-hide-medium w3-hide-large"
-          style="margin-left: auto"
-        >
+        <div class="w3-right w3-hide-large" style="margin-left: auto">
           <a
             href="javascript:void(0)"
             class="w3-bar-item w3-button button-header spaced"
@@ -60,7 +66,7 @@
       </div>
     </div>
     <nav
-      class="w3-sidebar w3-bar-block w3-sand w3-card w3-animate-right w3-hide-medium w3-hide-large"
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large"
       id="mySidebar"
       style="display: none"
     >
@@ -71,21 +77,21 @@
         >Close &times;</a
       >
       <!-- changed -->
-      <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button"
-        >Food</a
+      <a href="#restaurants" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Restaurants</a
       >
       <a href="#merch" onclick="w3_close()" class="w3-bar-item w3-button"
         >Merch</a
       >
-      <a href="#restaurants" onclick="w3_close()" class="w3-bar-item w3-button"
-        >Restaurants</a
+      <a href="#city" onclick="w3_close()" class="w3-bar-item w3-button"
+        >City</a
       >
       <!-- added -->
-      <a href="#cuttery" onclick="w3_close()" class="w3-bar-item w3-button"
-        >Cuttery</a
+      <a href="#faqs" onclick="w3_close()" class="w3-bar-item w3-button"
+        >FAQs</a
       >
-      <a href="#chef" onclick="w3_close()" class="w3-bar-item w3-button"
-        >Chef</a
+      <a href="#rating-guide" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Rating Guide</a
       >
     </nav>
     <section id="home">
@@ -109,81 +115,98 @@
             src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2>Standouts</h2>
+            <h2 class="padding-top-small">Standouts</h2>
             <p>
-              This is a description of the type of restaurants in this category.
-              This will have a little bit of information about what kind of
-              restaurant this is and what kind of food you are looking for.
+              This section highlights must-visit spots that go beyond the
+              ordinary. These restaurants, cafes, and eateries have that special
+              something, be it a signature dish, unique ambiance, or exceptional
+              service, that makes them truly memorable. These are the places
+              you’ll want to tell your friends about after one bite, sip, or
+              experience.
             </p>
           </div>
         </div>
         <div>
           <img
             class="w3-image roundsquare"
-            src="/img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
+            src="./img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2>Casual Joints</h2>
+            <h2 class="padding-top-small">Casual Joints</h2>
             <p>
-              This is a description of the type of restaurants in this category.
-              This will have a little bit of information about what kind of
-              restaurant this is and what kind of food you are looking for.
+              Looking for a laid-back spot with fantastic food? Here, you'll
+              find friendly, fuss-free dining options perfect for any occasion.
+              Whether you’re grabbing a quick lunch, meeting friends, or
+              enjoying a cozy solo meal, these joints are big on flavor and
+              light on pretense, offering up delicious food in a relaxed
+              atmosphere.
             </p>
           </div>
         </div>
         <div>
           <img
             class="w3-image roundsquare"
-            src="/img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
+            src="./img/di-bella-coffee-s1-VmA26BIc-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2>Coffee and Tea</h2>
+            <h2 class="padding-top-small">Coffee and Tea</h2>
             <p>
-              This is a description of the type of restaurants in this category.
-              This will have a little bit of information about what kind of
-              restaurant this is and what kind of food you are looking for.
+              From indie coffee shops to elegant tea houses, this is all about
+              the best places to get your caffeine fix and indulge in tea
+              culture. Find spots known for expertly crafted brews,
+              house-roasted beans, aromatic teas, and pastries that pair
+              perfectly with every cup. Discover your next favorite place to
+              sip, savor, and unwind.
             </p>
           </div>
         </div>
         <div>
           <img
             class="w3-image roundsquare"
-            src="/img/patrick-tomasso-GXXYkSwndP4-unsplash (1).jpg"
+            src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2>Bars</h2>
+            <h2 class="padding-top-small">Bars</h2>
             <p>
-              This is a description of the type of restaurants in this category.
-              This will have a little bit of information about what kind of
-              restaurant this is and what kind of food you are looking for.
+              Here is your guide to the top spots for a great night out. Whether
+              you're in the mood for a lively cocktail lounge, a trendy craft
+              brewery, or a classic pub with a twist, you'll find it here.
+              Expect expertly mixed drinks, vibrant atmospheres, and plenty of
+              unique bar snacks and small bites to accompany the evening.
             </p>
           </div>
         </div>
         <div>
           <img
             class="w3-image roundsquare"
-            src="/img/jay-wennington-N_Y88TWmGwA-unsplash (1).jpg"
+            src="./img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2>Fine Dining</h2>
+            <h2 class="padding-top-small">Fine Dining</h2>
             <p>
-              This is a description of the type of restaurants in this category.
-              This will have a little bit of information about what kind of
-              restaurant this is and what kind of food you are looking for.
+              Explore the pinnacle of culinary artistry with restaurants that
+              turn meals into unforgettable experiences. From multi-course
+              tasting menus to elegantly plated dishes, these establishments
+              offer exceptional service, exquisite flavors, and an ambiance that
+              makes every meal feel like a special occasion.
             </p>
           </div>
         </div>
         <div>
           <img
             class="w3-image roundsquare"
-            src="/img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
+            src="./img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2>Street Food</h2>
+            <h2 class="padding-top-small">Street Food</h2>
             <p>
-              This is a description of the type of restaurants in this category.
-              This will have a little bit of information about what kind of
-              restaurant this is and what kind of food you are looking for.
+              For those who love bold flavors on a budget, this section
+              highlights vibrant food trucks, food stalls, and hidden gems
+              serving authentic street eats. These are the spots to find quick
+              bites and incredible local flavors, whether it's a sizzling taco
+              stand, a noodle stall, or a vendor with the best dumplings in
+              town. Perfect for foodies who love exploring the city one bite at
+              a time!
             </p>
           </div>
         </div>
@@ -218,8 +241,37 @@
             >
               <img
                 class="roundsquare darken-image"
-                src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
-                style="width: 100%"
+                src="./img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
+                style="
+                  width: 100%;
+                  font-family: literata;
+                  font-variant: normal;
+                  font-size: 30%;
+                  text-align: left;
+                "
+                alt="restaurant with plants"
+              />
+              <div class="text-overlay">greenleaf garden</div>
+            </div>
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+                style="
+                  width: 100%;
+                  font-family: literata;
+                  font-variant: normal;
+                  font-size: 30%;
+                  text-align: left;
+                "
+                alt="bar with bottles"
               />
               <div class="text-overlay">speakeasy lounge</div>
             </div>
@@ -233,10 +285,17 @@
             >
               <img
                 class="roundsquare darken-image"
-                src="./img/patrick-tomasso-GXXYkSwndP4-unsplash (1).jpg"
-                style="width: 100%"
+                src="./img/tony-rocket-kj_KCiNffYI-unsplash.jpg"
+                style="
+                  width: 100%;
+                  font-family: literata;
+                  font-variant: normal;
+                  font-size: 30%;
+                  text-align: left;
+                "
+                alt="steak with plantains and rice"
               />
-              <div class="text-overlay">speakeasy lounge 2</div>
+              <div class="text-overlay">sol y sazón</div>
             </div>
             <div
               class="mySlides overlay-container bigcaps"
@@ -248,25 +307,17 @@
             >
               <img
                 class="roundsquare darken-image"
-                src="./img/anomaly-WWesmHEgXDs-unsplash.jpg"
-                style="width: 100%"
+                src="./img/manek-singh-DpMzZFt18r0-unsplash.jpg"
+                style="
+                  width: 100%;
+                  font-family: literata;
+                  font-variant: normal;
+                  font-size: 30%;
+                  text-align: left;
+                "
+                alt="roasted duck with brussel sprouts"
               />
-              <div class="text-overlay">speakeasy lounge 3</div>
-            </div>
-            <div
-              class="mySlides overlay-container bigcaps"
-              style="
-                font-family: futura-pt, sans-serif;
-                font-weight: 900;
-                color: white;
-              "
-            >
-              <img
-                class="roundsquare darken-image"
-                src="./img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
-                style="width: 100%"
-              />
-              <div class="text-overlay">speakeasy lounge 4</div>
+              <div class="text-overlay">heritage table</div>
             </div>
             <!-- end carousel slide show -->
 
@@ -286,6 +337,7 @@
             <img
               class="roundsquare w3-opacity w3-hover-opacity-off"
               src="./img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
+              alt="restaurant with plants"
               style="width: 15vw; cursor: pointer"
               onclick="currentDiv(1)"
             />
@@ -293,7 +345,8 @@
           <div class="padding-sides-xsmall">
             <img
               class="roundsquare w3-opacity w3-hover-opacity-off"
-              src="./img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
+              src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+              alt="bar with bottles"
               style="width: 15vw; cursor: pointer"
               onclick="currentDiv(2)"
             />
@@ -301,7 +354,8 @@
           <div class="padding-sides-xsmall">
             <img
               class="roundsquare w3-opacity w3-hover-opacity-off"
-              src="./img/anomaly-WWesmHEgXDs-unsplash.jpg"
+              src="./img/tony-rocket-kj_KCiNffYI-unsplash.jpg"
+              alt="steak with plantains and rice"
               style="width: 15vw; cursor: pointer"
               onclick="currentDiv(3)"
             />
@@ -309,7 +363,8 @@
           <div class="padding-sides-xsmall">
             <img
               class="roundsquare w3-opacity w3-hover-opacity-off"
-              src="./img/patrick-tomasso-GXXYkSwndP4-unsplash (1).jpg"
+              src="./img/manek-singh-DpMzZFt18r0-unsplash.jpg"
+              alt="roasted duck with brussel sprouts"
               style="width: 15vw; cursor: pointer"
               onclick="currentDiv(4)"
             />
@@ -348,13 +403,52 @@
             <tr class="w3-hover-light-grey">
               <td>
                 <img
-                  src="./img/anomaly-WWesmHEgXDs-unsplash.jpg"
+                  src="./img/tony-rocket-kj_KCiNffYI-unsplash.jpg"
                   class="rectangle-image"
+                  alt="steak with plantains and rice"
                 />
               </td>
-              <td>Cookware</td>
-              <td>Skillet</td>
+              <td>Sol y Sazón</td>
+              <td>Casual</td>
               <td style="width: auto; height: auto">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p style="display: none">5</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
+                  class="rectangle-image"
+                  alt="restaurant tables"
+                />
+              </td>
+              <td>The Urban Table</td>
+              <td>Fine Dining</td>
+              <td style="width: auto">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p style="display: none">5</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  src="./img/eduardo-roda-lopes-mNefYU7uRbk-unsplash.jpg"
+                  class="rectangle-image"
+                  alt="plate of steak, eggs, and tomato"
+                />
+              </td>
+              <td>Ciao Bella</td>
+              <td>Fine Dining</td>
+              <td>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -366,13 +460,109 @@
             <tr class="w3-hover-light-grey">
               <td>
                 <img
-                  src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
                   class="rectangle-image"
+                  src="./img/mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg"
+                  alt="baked fish on table"
                 />
               </td>
-              <td>Hand Tool</td>
-              <td>Wooden Spoon</td>
-              <td style="width: auto">
+              <td>Ember & Ash</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/anthony-delanoix-OGC3l73HT5Q-unsplash.jpg"
+                  alt="pancakes and syrup"
+                />
+              </td>
+              <td>The Breakfast Nook</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/mateusz-zatorski-vXYglqFX01Q-unsplash.jpg"
+                  alt="table with bread, jams and salads"
+                />
+              </td>
+              <td>Morning Roast Café</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/masaaki-komori-Yb5VB9id0As-unsplash.jpg"
+                  alt="rice and soup"
+                />
+              </td>
+              <td>Sakura Lounge</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/suad-kamardeen-3lnsCAQm23U-unsplash.jpg"
+                  alt="skewer of meat with tomato"
+                />
+              </td>
+              <td>Schwarma Stop</td>
+              <td>Street Food</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/john-vid-m0H2RRgt-Bk-unsplash.jpg"
+                  alt="edemame bowl"
+                />
+              </td>
+              <td>Golden Harvest</td>
+              <td>Casual</td>
+              <td>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
@@ -384,12 +574,13 @@
             <tr class="w3-hover-light-grey">
               <td>
                 <img
-                  src="./img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
                   class="rectangle-image"
+                  src="./img/eaters-collective-ESmxug33C0c-unsplash.jpg"
+                  alt="table with drink and hot dish"
                 />
               </td>
-              <td>Hand Tool</td>
-              <td>Citrus Reamer</td>
+              <td>Smoke & Barrel</td>
+              <td>Fine Dining</td>
               <td>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -403,11 +594,31 @@
               <td>
                 <img
                   class="rectangle-image"
-                  src="./img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
+                  src="./img/micheile-henderson-Hn_GXIIoJ5s-unsplash.jpg"
+                  alt="tacos"
                 />
               </td>
-              <td>Electronic Appliance</td>
-              <td>Stand Mixer</td>
+              <td>Taco Tuesdays</td>
+              <td>Street Food</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">2</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/nick-karvounis-6qVskOfkgZY-unsplash.jpg"
+                  alt="potatoes cooking behind counter"
+                />
+              </td>
+              <td>Danish Comfort</td>
+              <td>Street Food</td>
               <td>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -421,11 +632,12 @@
               <td>
                 <img
                   class="rectangle-image"
-                  src="./img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
+                  src="./img/adam-jaime-dmkmrNptMpw-unsplash.jpg"
+                  alt="a glass of whisky"
                 />
               </td>
-              <td>Electronic Appliance</td>
-              <td>Stand Mixer</td>
+              <td>The Lantern Room</td>
+              <td>Bar</td>
               <td>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -433,6 +645,44 @@
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/adam-wilson-6UIonphZA5o-unsplash.jpg"
+                  alt="bottles behind bar"
+                />
+              </td>
+              <td>Firefly Alley</td>
+              <td>Bar</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+                  alt="bottles behind bar"
+                />
+              </td>
+              <td>Speakeasy Lounge</td>
+              <td>Bar</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p style="display: none">5</p>
               </td>
             </tr>
           </table>
@@ -445,54 +695,60 @@
         <div>
           <img
             class="w3-image roundsquare w3-hover-shadow"
-            src="/img/dishcount-t-shirt.jpg"
+            src="./img/dishcount-t-shirt.jpg"
             onclick="document.getElementById('modal01').style.display='block'"
             style="cursor: pointer"
+            alt="dishcount t-shirt"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
         </div>
         <div>
           <img
             class="w3-image roundsquare w3-hover-shadow"
-            src="/img/dishcount-mug.jpg"
+            src="./img/dishcount-mug.jpg"
             onclick="document.getElementById('modal02').style.display='block'"
             style="cursor: pointer"
+            alt="dishcount mug"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
         </div>
         <div>
           <img
             class="w3-image roundsquare w3-hover-shadow"
-            src="/img/dishcount-keychain.jpg"
+            src="./img/dishcount-keychain.jpg"
             onclick="document.getElementById('modal03').style.display='block'"
             style="cursor: pointer"
+            alt="dishcount keychain"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
         </div>
         <div>
           <img
             class="w3-image roundsquare w3-hover-shadow"
-            src="/img/dishcount-tote-bag.jpg"
+            src="./img/dishcount-tote-bag.jpg"
             onclick="document.getElementById('modal04').style.display='block'"
             style="cursor: pointer"
+            alt="dishcount tote bag"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
         </div>
         <div>
           <img
             class="w3-image roundsquare w3-hover-shadow"
-            src="/img/dishcount-bucket-hat.jpg"
+            src="./img/dishcount-bucket-hat.jpg"
             onclick="document.getElementById('modal05').style.display='block'"
             style="cursor: pointer"
+            alt="dishcount bucket hat"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
         </div>
         <div>
           <img
             class="w3-image roundsquare w3-hover-shadow"
-            src="/img/dishcount-sweatshirt.jpg"
+            src="./img/dishcount-sweatshirt.jpg"
             onclick="document.getElementById('modal06').style.display='block'"
             style="cursor: pointer"
+            alt="dishcount sweatshirt"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
         </div>
@@ -507,11 +763,8 @@
         >
         <!-- add modal background image -->
         <div class="w3-modal-content w3-animate-zoom">
-          <h4 class="w3-center">Alice Waters - 1</h4>
-          <img
-            src="./img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
-            style="width: 100%"
-          />
+          <h4 class="w3-center">T-Shirt</h4>
+          <img src="./img/dishcount-t-shirt.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
@@ -523,8 +776,8 @@
         >
         <!-- add modal background image -->
         <div class="w3-modal-content w3-animate-zoom">
-          <h4 class="w3-center">April Bloomfield</h4>
-          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+          <h4 class="w3-center">Mug</h4>
+          <img src="./img/dishcount-mug.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
@@ -536,8 +789,8 @@
         >
         <!-- add modal background image -->
         <div class="w3-modal-content w3-animate-zoom">
-          <h4 class="w3-center">April Bloomfield</h4>
-          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+          <h4 class="w3-center">Keychain</h4>
+          <img src="./img/dishcount-keychain.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
@@ -549,8 +802,8 @@
         >
         <!-- add modal background image -->
         <div class="w3-modal-content w3-animate-zoom">
-          <h4 class="w3-center">April Bloomfield</h4>
-          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+          <h4 class="w3-center">Tote Bag</h4>
+          <img src="./img/dishcount-tote-bag.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
@@ -562,8 +815,8 @@
         >
         <!-- add modal background image -->
         <div class="w3-modal-content w3-animate-zoom">
-          <h4 class="w3-center">April Bloomfield</h4>
-          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+          <h4 class="w3-center">Bucket Hat</h4>
+          <img src="./img/dishcount-bucket-hat.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
@@ -575,8 +828,8 @@
         >
         <!-- add modal background image -->
         <div class="w3-modal-content w3-animate-zoom">
-          <h4 class="w3-center">April Bloomfield</h4>
-          <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+          <h4 class="w3-center">Sweatshirt</h4>
+          <img src="./img/dishcount-sweatshirt.jpg" style="width: 100%" />
         </div>
       </div>
     </section>
@@ -590,18 +843,21 @@
         </h1>
         <h2>Fisherman's Warf</h2>
         <p>
-          No trip to San Francisco is complete without a visit to Fisherman’s
-          Wharf. Known for its scenic waterfront and historic piers, this area
-          is a haven for seafood lovers. Be sure to try the famous clam chowder
-          in a sourdough bread bowl at Boudin Bakery. For fresh, local Dungeness
+          No trip to San Francisco is complete without a visit to
+          <a target="_blank" href="https://www.fishermanswharf.org/"
+            >Fisherman’s Wharf</a
+          >. Known for its scenic waterfront and historic piers, this area is a
+          haven for seafood lovers. Be sure to try the famous clam chowder in a
+          sourdough bread bowl at Boudin Bakery. For fresh, local Dungeness
           crab, visit the crab stands along the pier or enjoy a meal at Alioto's
           or Fog Harbor Fish House. For a sweet treat, don’t forget the creamy
           fudge from Ghirardelli Square.
         </p>
         <figure class="w3-padding-16">
           <img
-            src="/img/eugen-kucheruk-TvcjBk5y0wU-unsplash.jpg"
+            src="./img/eugen-kucheruk-TvcjBk5y0wU-unsplash.jpg"
             class="w3-image w3-padding-16"
+            alt="a burrito cut in half"
           />
           <figcaption class="w3-center">
             A super burrito at our favorite spot in the Mission.
@@ -609,13 +865,18 @@
         </figure>
         <h2>Chinatown</h2>
         <p>
-          San Francisco’s Chinatown is the oldest in North America and offers a
-          culinary journey like no other. Wander through its bustling streets
-          and you’ll find everything from dim sum to Cantonese roast meats. Good
-          Mong Kok Bakery is perfect for grab-and-go dim sum, while Z & Y
-          Restaurant is famous for its spicy Sichuan dishes. Looking for an
-          authentic experience? Head to R&G Lounge for their signature salt and
-          pepper crab.
+          San Francisco’s
+          <a
+            href="https://sfcityguides.org/tour/chinatown-family-associations-tongs-and-gangs/?gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RQV--VRg45kJ3WePviU6SB8lYxDUwLJRkIM9ixf5G2w6gG7tT8n0AAaAlq5EALw_wcB"
+            target="_blank"
+            >Chinatown</a
+          >
+          is the oldest in North America and offers a culinary journey like no
+          other. Wander through its bustling streets and you’ll find everything
+          from dim sum to Cantonese roast meats. Good Mong Kok Bakery is perfect
+          for grab-and-go dim sum, while Z & Y Restaurant is famous for its
+          spicy Sichuan dishes. Looking for an authentic experience? Head to R&G
+          Lounge for their signature salt and pepper crab.
         </p>
         <h2>Mission District</h2>
         <p>
@@ -629,8 +890,9 @@
         </p>
         <figure class="w3-padding-16">
           <img
-            src="/img/aaron-kato-zcoDYal9GkQ-unsplash.jpg"
+            src="./img/aaron-kato-zcoDYal9GkQ-unsplash.jpg"
             class="w3-image w3-padding-16"
+            alt="colorful Victorian houses"
           />
           <figcaption class="w3-center">
             The Painted Ladies, across from Alamo square in the Hayes
@@ -673,8 +935,9 @@
         </p>
         <figure class="w3-padding-16">
           <img
-            src="/img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+            src="./img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
             class="w3-image w3-padding-16"
+            alt="gyoza with chopsticks"
           />
           <figcaption class="w3-center">
             Gyoza at a Chinese restaurant in the Richmond.
@@ -730,10 +993,20 @@
           <!-- add accordion content here -->
           <div id="accordion1" class="w3-hide w3-container">
             <p>
-              Vegetables are parts of plants that are consumed by humans or
-              other animals as food. The original meaning is still commonly used
-              and is applied to plants collectively to refer to all edible plant
-              matter.
+              See our <a href="#rating-guide">Rating Guide</a> for a detailed
+              breakdown of our criteria for rating restaurants. Restaurants are
+              rated on a scale of 1-5 using three separate categories: vibe,
+              taste, and service. Our team carefully curates the list of
+              restaurants, cafes, and eateries to ensure they meet a high
+              standard of quality and appeal. We evaluate each location based on
+              several factors, including the quality and presentation of the
+              food, the level of service provided, the ambiance and atmosphere
+              of the establishment, and the overall dining experience.
+              Additionally, we actively seek out user feedback and
+              recommendations from our community to keep our listings diverse,
+              fresh, and relevant to our audience’s tastes. Whether it’s a
+              hidden gem or a popular spot, we aim to feature places that offer
+              something special and memorable for every type of diner.
             </p>
           </div>
         </div>
@@ -747,7 +1020,8 @@
             id="accordionBtn2"
           >
             <h4 class="slab-header">
-              What is another question for an FAQ?<i
+              How do you choose the restaurants and cafes featured on the
+              site?<i
                 class="fa-solid fa-angle-down"
                 style="padding-left: 1%"
               ></i>
@@ -755,10 +1029,18 @@
           </button>
           <div id="accordion2" class="w3-hide w3-container">
             <p>
-              Simple fleshy fruits from apples to berries to watermelon; simple
-              dry fruits including beans and rice, coconuts and carrots;
-              aggregate fruits including strawberries, raspberries,
-              blackberries, pawpaw.
+              We take a comprehensive approach when selecting the best dining
+              spots to feature on our website. Our team assesses a variety of
+              key elements, such as the quality and flavor of the food, the
+              attentiveness and friendliness of the service, the atmosphere and
+              decor of the space, and the overall dining experience. We also
+              look at the consistency of these factors over time, ensuring that
+              each restaurant delivers a great experience to every guest. To
+              keep our content up to date and diverse, we also take into account
+              recommendations and feedback from our users, constantly refreshing
+              our listings to reflect new discoveries and popular trends. This
+              ensures our reviews remain relevant and provide our readers with a
+              true reflection of the local dining scene.
             </p>
           </div>
         </div>
@@ -769,7 +1051,7 @@
             id="accordionBtn3"
           >
             <h4 class="slab-header">
-              How much do you charge for shipping on merchandise items?<i
+              Can I leave my own reviews or ratings?<i
                 class="fa-solid fa-angle-down"
                 style="padding-left: 1%"
               ></i>
@@ -777,10 +1059,14 @@
           </button>
           <div id="accordion3" class="w3-hide w3-container">
             <p>
-              Simple fleshy fruits from apples to berries to watermelon; simple
-              dry fruits including beans and rice, coconuts and carrots;
-              aggregate fruits including strawberries, raspberries,
-              blackberries, pawpaw.
+              At this time, we do not have a platform for user-submitted reviews
+              directly on our website. However, we highly value the experiences
+              and opinions of our readers! We encourage you to share your
+              thoughts with us via our social media channels, where we actively
+              engage with our community. Your feedback might even be highlighted
+              in future updates or special features. We’re always looking for
+              fresh perspectives and love hearing about the spots you enjoy, so
+              don’t hesitate to reach out!
             </p>
           </div>
         </div>
@@ -791,7 +1077,7 @@
             id="accordionBtn4"
           >
             <h4 class="slab-header">
-              What is another question for an FAQ?<i
+              Are all of your reviews based on personal visits?<i
                 class="fa-solid fa-angle-down"
                 style="padding-left: 1%"
               ></i>
@@ -799,17 +1085,86 @@
           </button>
           <div id="accordion4" class="w3-hide w3-container">
             <p>
-              Simple fleshy fruits from apples to berries to watermelon; simple
-              dry fruits including beans and rice, coconuts and carrots;
-              aggregate fruits including strawberries, raspberries,
-              blackberries, pawpaw.
+              Yes, all of our reviews are based on first-hand visits from our
+              team. We believe in offering honest and reliable insights,
+              ensuring that every review accurately reflects the experience you
+              can expect when visiting these locations. Our team personally
+              dines at each restaurant, cafe, and eatery we feature, so we can
+              provide you with authentic feedback on food quality, service,
+              ambiance, and overall experience. We aim to give you a clear
+              picture, so you can make well-informed decisions about where to
+              eat.
             </p>
+          </div>
+        </div>
+        <div id="fifth-accordian" class="padding-vertical-bottom">
+          <button
+            onclick="myAccordion('accordion5')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn4"
+          >
+            <h4 class="slab-header">
+              Do you have any recipes?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <div id="accordion5" class="w3-hide w3-container">
+            <p>
+              While we don’t provide recipes directly, many of the dishes
+              featured in our reviews can inspire your cooking adventures! For
+              some, you can find similar recipes and techniques on YouTube. We
+              recommend checking out channels that specialize in the cuisine
+              you’re interested in. Many channels offer step-by-step guides for
+              recreating iconic dishes at home. A few of our favorites are
+              linked below.
+            </p>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                style="padding-top: 2%"
+                height="auto"
+                src="https://www.youtube.com/embed/xzig1sE69s0?si=0xo5HuFQdag8ekVJ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="auto"
+                style="padding-top: 2%"
+                src="https://www.youtube.com/embed/mhDJNfV7hjk?si=TYh_T0W8CsKksM9h"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="auto"
+                style="padding-top: 2%"
+                src="https://www.youtube.com/embed/jKpIpSakqD0?si=iSEH8JPtHnQn-tXu"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section id="rating-guide" class="w3-content" style="padding-bottom: 5%">
-      <h1 class="bigcaps w3-center">rating guide</h1>
+      <h1 style="padding-top: 5%" class="bigcaps w3-center">rating guide</h1>
       <table class="w3-table-all">
         <thead>
           <tr class="w3-black">
@@ -900,7 +1255,7 @@
       >
       <div class="w3-xlarge w3-section">
         <a
-          class="fa fa-twitter w3-hover-opacity"
+          class="fa-brands fa-x-twitter w3-hover-opacity"
           href="https://twitter.com/"
           target="_blank"
           style="text-decoration: none"
