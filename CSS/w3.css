@@ -367,6 +367,9 @@ td {
     transform: translate(-50%, -50%);
     font-size: 17pt;
   }
+  .slab-header {
+    font-size: 12pt;
+  }
 }
 figure {
   margin: 0;
