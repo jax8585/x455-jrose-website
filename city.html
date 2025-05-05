@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurants</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/w3.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mhr1vgg.css" />
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-black w3-padding w3-card"
+        style="display: flex; align-items: center"
+      >
+        <a href="./index.html" class="w3-bar-item w3-button logo">dishcount</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div
+          class="w3-right w3-hide-small w3-hide-medium"
+          style="margin-left: auto"
+        >
+          <a href="./index.html" class="w3-bar-item w3-button menu-text spaced"
+            >restaurants</a
+          >
+          <a
+            style="display: none"
+            href="./merch.html"
+            class="w3-bar-item w3-button menu-text spaced"
+            >merch</a
+          >
+          <a href="./city.html" class="w3-bar-item w3-button menu-text spaced"
+            >city</a
+          >
+          <a href="./faqs.html" class="w3-bar-item w3-button menu-text spaced"
+            >FAQs</a
+          >
+          <a
+            href="./ratingguide.html"
+            class="w3-bar-item w3-button menu-text spaced"
+            style="display: none"
+            >rating guide</a
+          >
+          <!--
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>-->
+        </div>
+        <div class="w3-right w3-hide-large" style="margin-left: auto">
+          <a
+            href="javascript:void(0)"
+            class="w3-bar-item button-header spaced"
+            onclick="w3_open()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right"
+      id="mySidebar"
+      style="display: none"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="close-button w3-bar-item w3-xxlarge"
+        style="text-decoration: none"
+      >
+        &times;</a
+      >
+      <!--
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-cart-shopping"></i
+      ></a>
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-magnifying-glass"></i
+      ></a>
+      -->
+      <!-- changed -->
+      <a
+        href="index.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
+        >Restaurants</a
+      >
+
+      <a
+        href="city.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
+        >City</a
+      >
+      <!-- added -->
+      <a
+        href="faqs.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
+        >FAQs</a
+      >
+    </nav>
+    <section id="city" style="padding-top: 55px">
+      <div class="city-content">
+        <h1
+          class="section-header"
+          style="margin-bottom: clamp(2rem, 5.5%, 3.7rem)"
+        >
+          San Francisco
+        </h1>
+        <h2 class="subhead">Fisherman's Warf</h2>
+        <p class="body-copy">
+          No trip to San Francisco is complete without a visit to
+          <a target="_blank" href="https://www.fishermanswharf.org/"
+            >Fisherman’s Wharf</a
+          >. Known for its scenic waterfront and historic piers, this area is a
+          haven for seafood lovers. Be sure to try the famous clam chowder in a
+          sourdough bread bowl at Boudin Bakery. For fresh, local Dungeness
+          crab, visit the crab stands along the pier or enjoy a meal at Alioto's
+          or Fog Harbor Fish House. For a sweet treat, don’t forget the creamy
+          fudge from Ghirardelli Square.
+        </p>
+        <figure>
+          <img
+            src="./img/eugen-kucheruk-TvcjBk5y0wU-unsplash.jpg"
+            class="w3-image"
+            alt="a burrito cut in half"
+          />
+          <figcaption class="w3-center">
+            A super burrito at our favorite spot in the Mission.
+          </figcaption>
+        </figure>
+        <h2 class="subhead">Chinatown</h2>
+        <p class="body-copy city-text-block">
+          San Francisco’s
+          <a
+            href="https://sfcityguides.org/tour/chinatown-family-associations-tongs-and-gangs/?gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RQV--VRg45kJ3WePviU6SB8lYxDUwLJRkIM9ixf5G2w6gG7tT8n0AAaAlq5EALw_wcB"
+            target="_blank"
+            >Chinatown</a
+          >
+          is the oldest in North America and offers a culinary journey like no
+          other. Wander through its bustling streets and you’ll find everything
+          from dim sum to Cantonese roast meats. Good Mong Kok Bakery is perfect
+          for grab-and-go dim sum, while Z & Y Restaurant is famous for its
+          spicy Sichuan dishes. Looking for an authentic experience? Head to R&G
+          Lounge for their signature salt and pepper crab.
+        </p>
+        <h2 class="subhead">Mission District</h2>
+        <p class="body-copy">
+          The Mission District is a vibrant mix of Latino culture and trendy
+          food spots. Known for its Mexican taquerias, this is the place to go
+          for a great burrito. La Taqueria and El Farolito have long been local
+          favorites. Beyond Mexican cuisine, the area also boasts hip, modern
+          eateries like Tartine Bakery, where the freshly baked pastries are
+          worth the wait, and Dandelion Chocolate, a small-batch chocolate
+          factory offering unique confections.
+        </p>
+        <figure>
+          <img
+            src="./img/aaron-kato-zcoDYal9GkQ-unsplash.jpg"
+            class="w3-image"
+            alt="colorful Victorian houses"
+          />
+          <figcaption class="w3-center">
+            The Painted Ladies, across from Alamo square in the Hayes
+            Valley/Lower Haight area.
+          </figcaption>
+        </figure>
+        <h2 class="subhead">North Beach</h2>
+
+        <p class="body-copy city-text-block">
+          San Francisco’s North Beach, also known as "Little Italy," is a
+          charming neighborhood brimming with Italian cafés, bakeries, and
+          restaurants. Start your day with an espresso and a pastry from Caffè
+          Greco or Liguria Bakery, known for its delicious focaccia. For a
+          classic Italian meal, dine at Tony's Pizza Napoletana, a favorite for
+          its award-winning pizzas, or visit Sotto Mare for authentic Italian
+          seafood dishes.
+        </p>
+
+        <h2 class="subhead">Haight-Ashbury</h2>
+
+        <p class="body-copy city-text-block">
+          Known for its historic role in the 1960s counterculture movement,
+          Haight-Ashbury offers a unique mix of eclectic eats. VeganBurg serves
+          up plant-based burgers that even carnivores rave about, while The
+          Alembic is perfect for craft cocktails and a creative menu. For a
+          nostalgic sweet treat, stop by Ben & Jerry’s on Haight Street for ice
+          cream.
+        </p>
+
+        <h2 class="subhead">SoMa (South of Market)</h2>
+
+        <p class="body-copy">
+          If you're looking for upscale dining and innovative cuisine, SoMa is
+          the place to be. This area is home to some of the city’s finest
+          restaurants, like Mourad, which serves modern Moroccan-inspired dishes
+          in a sleek setting, and Benu, a three-Michelin-starred spot that
+          blends Asian flavors with fine dining flair. For casual bites, Little
+          Skillet serves up Southern comfort food with favorites like fried
+          chicken and waffles.
+        </p>
+        <figure>
+          <img
+            src="./img/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg"
+            class="w3-image"
+            alt="gyoza with chopsticks"
+          />
+          <figcaption class="w3-center">
+            Gyoza at a Chinese restaurant in the Richmond.
+          </figcaption>
+        </figure>
+        <h2 class="subhead">The Marina</h2>
+        <p class="body-copy city-text-block">
+          The Marina District offers beautiful waterfront views along with a
+          buzzing food scene. Chestnut Street is the heart of this neighborhood,
+          packed with trendy cafes and restaurants. Stop by A16 for wood-fired
+          pizzas and Southern Italian fare, or grab a healthy smoothie from
+          Pressed Juicery. If you're in the mood for seafood, The Tipsy Pig
+          offers a gastropub experience with dishes like fish and chips and
+          craft beers.
+        </p>
+
+        <h2 class="subhead">The Richmond</h2>
+
+        <p class="body-copy city-text-block">
+          San Francisco’s Richmond District is an under-the-radar food haven
+          offering an international range of flavors. Clement Street is lined
+          with Asian restaurants, from Thai and Vietnamese to Korean and
+          Chinese. Stop by Burma Superstar for Burmese tea leaf salad and
+          flavorful curries. If you’re in the mood for sushi, Kabuto Sushi
+          offers some of the freshest fish in the city, while Lokma offers a
+          taste of Turkey with its Mediterranean brunch options.
+        </p>
+      </div>
+    </section>
+    <footer class="body-text w3-center w3-black w3-padding-16">
+      <a
+        href="#home"
+        class="w3-button w3-light-grey"
+        style="border-radius: 100px"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <a
+          class="fa-brands fa-x-twitter w3-hover-opacity"
+          href="https://twitter.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-instagram w3-hover-opacity"
+          href="https://www.instagram.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-linkedin w3-hover-opacity"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-pinterest-p w3-hover-opacity"
+          href="https://www.pinterest.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-facebook-official w3-hover-opacity my-text-decoration"
+          href="https://www.facebook.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >Privacy Policy</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >Terms of User</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="text-decoration: none"
+          >Accessibility</a
+        >
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >1-800-123-4567</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >TTY: 1-800-987-6543</a
+        >
+      </div>
+      <a
+        href="#"
+        target="_blank"
+        class="fa fa-copyright w3-hover-opacity"
+        style="text-decoration: none"
+        >All Rights Reserved.</a
+      >
+    </footer>
+
+    <script>
+      // begin added for mobile version
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // end added for mobile version
+    </script>
+    <script>
+      // begin added for carousel
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        //setTimeout(carousel, 10000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+      function nextDiv() {
+        myIndex++;
+        if (myIndex > 3) {
+          myIndex = 0;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+      function prevDiv() {
+        myIndex--;
+        if (myIndex < 0) {
+          myIndex = 3;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+    </script>
+    <script>
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+    </script>
+    <script>
+      // begin added for accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // end added for accordion
+    </script>
+    <script
+      src="https://kit.fontawesome.com/401f46c6c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

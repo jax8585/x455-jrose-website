@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurants</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/w3.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mhr1vgg.css" />
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-black w3-padding w3-card"
+        style="display: flex; align-items: center"
+      >
+        <a href="./index.html" class="w3-bar-item w3-button logo">dishcount</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div
+          class="w3-right w3-hide-small w3-hide-medium"
+          style="margin-left: auto"
+        >
+          <a
+            href="./restaurants.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >restaurants</a
+          >
+          <a
+            href="./merch.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >merch</a
+          >
+          <a
+            href="./city.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >city</a
+          >
+          <a
+            href="./faqs.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >FAQs</a
+          >
+          <a
+            href="./ratingguide.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >rating guide</a
+          >
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </div>
+        <div class="w3-right w3-hide-large" style="margin-left: auto">
+          <a
+            href="javascript:void(0)"
+            class="w3-bar-item w3-button button-header spaced"
+            onclick="w3_open()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <section id="restaurants">
+      <div>
+        <h1
+          class="w3-center bigcaps"
+          style="padding-bottom: 6vh; padding-top: 5%"
+        >
+          standouts
+        </h1>
+        <div class="w3-padding-large flex-row">
+          <!-- carousel -->
+          <div class="padding-sides-5">
+            <i
+              onclick="prevDiv()"
+              class="fa-solid fa-arrow-left"
+              style="font-size: 10vh"
+            ></i>
+          </div>
+          <div class="overlay-container" style="width: 50%">
+            <!-- begin carousel slide show -->
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
+                style="
+                  width: 100%;
+                  font-family: literata;
+                  font-variant: normal;
+                  font-size: 30%;
+                  text-align: left;
+                "
+                alt="restaurant with plants"
+              />
+              <div class="text-overlay">greenleaf garden</div>
+            </div>
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+                style="
+                  width: 100%;
+                  font-family: literata;
+                  font-variant: normal;
+                  font-size: 30%;
+                  text-align: left;
+                "
+                alt="bar with bottles"
+              />
+              <div class="text-overlay">speakeasy lounge</div>
+            </div>
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/tony-rocket-kj_KCiNffYI-unsplash.jpg"
+                style="
+                  width: 100%;
+                  font-family: literata;
+                  font-variant: normal;
+                  font-size: 30%;
+                  text-align: left;
+                "
+                alt="steak with plantains and rice"
+              />
+              <div class="text-overlay">sol y sazón</div>
+            </div>
+            <div
+              class="mySlides overlay-container bigcaps"
+              style="
+                font-family: futura-pt, sans-serif;
+                font-weight: 900;
+                color: white;
+              "
+            >
+              <img
+                class="roundsquare darken-image"
+                src="./img/manek-singh-DpMzZFt18r0-unsplash.jpg"
+                style="
+                  width: 100%;
+                  font-family: literata;
+                  font-variant: normal;
+                  font-size: 30%;
+                  text-align: left;
+                "
+                alt="roasted duck with brussel sprouts"
+              />
+              <div class="text-overlay">heritage table</div>
+            </div>
+            <!-- end carousel slide show -->
+
+            <!-- begin carousel thumbnail -->
+            <!-- add thumbnail buttons for selecting a slide to show -->
+          </div>
+          <div class="padding-sides-5">
+            <i
+              onclick="nextDiv()"
+              class="fa-solid fa-arrow-right"
+              style="font-size: 10vh"
+            ></i>
+          </div>
+        </div>
+        <div class="flex-row" style="padding-top: 10vh">
+          <div class="padding-sides-xsmall">
+            <img
+              class="roundsquare w3-opacity w3-hover-opacity-off"
+              src="./img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg"
+              alt="restaurant with plants"
+              style="width: 15vw; cursor: pointer"
+              onclick="currentDiv(1)"
+            />
+          </div>
+          <div class="padding-sides-xsmall">
+            <img
+              class="roundsquare w3-opacity w3-hover-opacity-off"
+              src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+              alt="bar with bottles"
+              style="width: 15vw; cursor: pointer"
+              onclick="currentDiv(2)"
+            />
+          </div>
+          <div class="padding-sides-xsmall">
+            <img
+              class="roundsquare w3-opacity w3-hover-opacity-off"
+              src="./img/tony-rocket-kj_KCiNffYI-unsplash.jpg"
+              alt="steak with plantains and rice"
+              style="width: 15vw; cursor: pointer"
+              onclick="currentDiv(3)"
+            />
+          </div>
+          <div class="padding-sides-xsmall">
+            <img
+              class="roundsquare w3-opacity w3-hover-opacity-off"
+              src="./img/manek-singh-DpMzZFt18r0-unsplash.jpg"
+              alt="roasted duck with brussel sprouts"
+              style="width: 15vw; cursor: pointer"
+              onclick="currentDiv(4)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row" id="utensil">
+        <h1
+          class="w3-center bigcaps"
+          style="padding-bottom: 5%; padding-top: 10vh"
+        >
+          the list
+        </h1>
+
+        <!-- add sortable table -->
+        <!-- step 1: create a table with 4 columns -->
+        <!-- step 2: add javascrip and jquery to make the table sortable -->
+
+        <div class="flex-column">
+          <div class="w3-black w3-content">
+            <img
+              src="./img/manek-singh-DpMzZFt18r0-unsplash.jpg"
+              alt="roasted duck with brussel sprouts"
+            />
+          </div>
+        </div>
+
+        <div style="overflow: auto; margin-left: 3%; margin-right: 3%">
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr class="w3-black">
+                <th style="width: 40%">photo</th>
+                <th>restaurant</th>
+                <th>type</th>
+                <th>rating</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  src="./img/tony-rocket-kj_KCiNffYI-unsplash.jpg"
+                  class="rectangle-image"
+                  alt="steak with plantains and rice"
+                />
+              </td>
+              <td>Sol y Sazón</td>
+              <td>Casual</td>
+              <td style="width: auto; height: auto">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p style="display: none">5</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
+                  class="rectangle-image"
+                  alt="restaurant tables"
+                />
+              </td>
+              <td>The Urban Table</td>
+              <td>Fine Dining</td>
+              <td style="width: auto">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p style="display: none">5</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  src="./img/eduardo-roda-lopes-mNefYU7uRbk-unsplash.jpg"
+                  class="rectangle-image"
+                  alt="plate of steak, eggs, and tomato"
+                />
+              </td>
+              <td>Ciao Bella</td>
+              <td>Fine Dining</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">4</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg"
+                  alt="baked fish on table"
+                />
+              </td>
+              <td>Ember & Ash</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/anthony-delanoix-OGC3l73HT5Q-unsplash.jpg"
+                  alt="pancakes and syrup"
+                />
+              </td>
+              <td>The Breakfast Nook</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/mateusz-zatorski-vXYglqFX01Q-unsplash.jpg"
+                  alt="table with bread, jams and salads"
+                />
+              </td>
+              <td>Morning Roast Café</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/masaaki-komori-Yb5VB9id0As-unsplash.jpg"
+                  alt="rice and soup"
+                />
+              </td>
+              <td>Sakura Lounge</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/suad-kamardeen-3lnsCAQm23U-unsplash.jpg"
+                  alt="skewer of meat with tomato"
+                />
+              </td>
+              <td>Schwarma Stop</td>
+              <td>Street Food</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/john-vid-m0H2RRgt-Bk-unsplash.jpg"
+                  alt="edemame bowl"
+                />
+              </td>
+              <td>Golden Harvest</td>
+              <td>Casual</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">2</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/eaters-collective-ESmxug33C0c-unsplash.jpg"
+                  alt="table with drink and hot dish"
+                />
+              </td>
+              <td>Smoke & Barrel</td>
+              <td>Fine Dining</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/micheile-henderson-Hn_GXIIoJ5s-unsplash.jpg"
+                  alt="tacos"
+                />
+              </td>
+              <td>Taco Tuesdays</td>
+              <td>Street Food</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">2</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/nick-karvounis-6qVskOfkgZY-unsplash.jpg"
+                  alt="potatoes cooking behind counter"
+                />
+              </td>
+              <td>Danish Comfort</td>
+              <td>Street Food</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/adam-jaime-dmkmrNptMpw-unsplash.jpg"
+                  alt="a glass of whisky"
+                />
+              </td>
+              <td>The Lantern Room</td>
+              <td>Bar</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/adam-wilson-6UIonphZA5o-unsplash.jpg"
+                  alt="bottles behind bar"
+                />
+              </td>
+              <td>Firefly Alley</td>
+              <td>Bar</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p style="display: none">3</p>
+              </td>
+            </tr>
+            <tr class="w3-hover-light-grey">
+              <td>
+                <img
+                  class="rectangle-image"
+                  src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+                  alt="bottles behind bar"
+                />
+              </td>
+              <td>Speakeasy Lounge</td>
+              <td>Bar</td>
+              <td>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p style="display: none">5</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="w3-center w3-black w3-padding-16">
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <a
+          class="fa-brands fa-x-twitter w3-hover-opacity"
+          href="https://twitter.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-instagram w3-hover-opacity"
+          href="https://www.instagram.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-linkedin w3-hover-opacity"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-pinterest-p w3-hover-opacity"
+          href="https://www.pinterest.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-facebook-official w3-hover-opacity my-text-decoration"
+          href="https://www.facebook.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >Privacy Policy</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >Terms of User</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="text-decoration: none"
+          >Accessibility</a
+        >
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >1-800-123-4567</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >TTY: 1-800-987-6543</a
+        >
+      </div>
+      <a
+        href="#"
+        target="_blank"
+        class="fa fa-copyright w3-hover-opacity"
+        style="text-decoration: none"
+        >All Rights Reserved.</a
+      >
+    </footer>
+    <script>
+      // begin added for mobile version
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // end added for mobile version
+    </script>
+    <script>
+      // begin added for carousel
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        //setTimeout(carousel, 10000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+      function nextDiv() {
+        myIndex++;
+        if (myIndex > 3) {
+          myIndex = 0;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+      function prevDiv() {
+        myIndex--;
+        if (myIndex < 0) {
+          myIndex = 3;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+    </script>
+    <script>
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+    </script>
+    <script>
+      // begin added for accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // end added for accordion
+    </script>
+    <script
+      src="https://kit.fontawesome.com/401f46c6c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

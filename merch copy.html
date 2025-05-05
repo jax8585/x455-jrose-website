@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurants</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/w3.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mhr1vgg.css" />
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-black w3-padding w3-card"
+        style="display: flex; align-items: center"
+      >
+        <a href="./index.html" class="w3-bar-item w3-button logo">dishcount</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div
+          class="w3-right w3-hide-small w3-hide-medium"
+          style="margin-left: auto"
+        >
+          <a
+            href="./restaurants.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >restaurants</a
+          >
+          <a
+            href="./merch.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >merch</a
+          >
+          <a
+            href="./city.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >city</a
+          >
+          <a
+            href="./faqs.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >FAQs</a
+          >
+          <a
+            href="./ratingguide.html"
+            class="w3-bar-item w3-button button-header spaced"
+            >rating guide</a
+          >
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </div>
+        <div class="w3-right w3-hide-large" style="margin-left: auto">
+          <a
+            href="javascript:void(0)"
+            class="w3-bar-item w3-button button-header spaced"
+            onclick="w3_open()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <section id="merch">
+      <h1 style="padding-top: 5%" class="bigcaps w3-center">merch</h1>
+      <div style="padding-top: 2%" class="flex-container padding-sides-5">
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="./img/dishcount-t-shirt.jpg"
+            onclick="document.getElementById('modal01').style.display='block'"
+            style="cursor: pointer"
+            alt="dishcount t-shirt"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="./img/dishcount-mug.jpg"
+            onclick="document.getElementById('modal02').style.display='block'"
+            style="cursor: pointer"
+            alt="dishcount mug"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="./img/dishcount-keychain.jpg"
+            onclick="document.getElementById('modal03').style.display='block'"
+            style="cursor: pointer"
+            alt="dishcount keychain"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="./img/dishcount-tote-bag.jpg"
+            onclick="document.getElementById('modal04').style.display='block'"
+            style="cursor: pointer"
+            alt="dishcount tote bag"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="./img/dishcount-bucket-hat.jpg"
+            onclick="document.getElementById('modal05').style.display='block'"
+            style="cursor: pointer"
+            alt="dishcount bucket hat"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+        <div>
+          <img
+            class="w3-image roundsquare w3-hover-shadow"
+            src="./img/dishcount-sweatshirt.jpg"
+            onclick="document.getElementById('modal06').style.display='block'"
+            style="cursor: pointer"
+            alt="dishcount sweatshirt"
+          />
+          <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
+        </div>
+      </div>
+      <!--modals for lightbox grid-->
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">T-Shirt</h4>
+          <img src="./img/dishcount-t-shirt.jpg" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Mug</h4>
+          <img src="./img/dishcount-mug.jpg" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Keychain</h4>
+          <img src="./img/dishcount-keychain.jpg" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Tote Bag</h4>
+          <img src="./img/dishcount-tote-bag.jpg" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Bucket Hat</h4>
+          <img src="./img/dishcount-bucket-hat.jpg" style="width: 100%" />
+        </div>
+      </div>
+      <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+        <!-- add close button-->
+        <span
+          class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+          style="cursor: pointer"
+          >&times;</span
+        >
+        <!-- add modal background image -->
+        <div class="w3-modal-content w3-animate-zoom">
+          <h4 class="w3-center">Sweatshirt</h4>
+          <img src="./img/dishcount-sweatshirt.jpg" style="width: 100%" />
+        </div>
+      </div>
+    </section>
+    <footer class="w3-center w3-black w3-padding-16">
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <a
+          class="fa-brands fa-x-twitter w3-hover-opacity"
+          href="https://twitter.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-instagram w3-hover-opacity"
+          href="https://www.instagram.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-linkedin w3-hover-opacity"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-pinterest-p w3-hover-opacity"
+          href="https://www.pinterest.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-facebook-official w3-hover-opacity my-text-decoration"
+          href="https://www.facebook.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >Privacy Policy</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >Terms of User</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="text-decoration: none"
+          >Accessibility</a
+        >
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >1-800-123-4567</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >TTY: 1-800-987-6543</a
+        >
+      </div>
+      <a
+        href="#"
+        target="_blank"
+        class="fa fa-copyright w3-hover-opacity"
+        style="text-decoration: none"
+        >All Rights Reserved.</a
+      >
+    </footer>
+    <script>
+      // begin added for mobile version
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // end added for mobile version
+    </script>
+    <script>
+      // begin added for carousel
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        //setTimeout(carousel, 10000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+      function nextDiv() {
+        myIndex++;
+        if (myIndex > 3) {
+          myIndex = 0;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+      function prevDiv() {
+        myIndex--;
+        if (myIndex < 0) {
+          myIndex = 3;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+    </script>
+    <script>
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+    </script>
+    <script>
+      // begin added for accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // end added for accordion
+    </script>
+    <script
+      src="https://kit.fontawesome.com/401f46c6c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

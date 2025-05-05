@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>W3.CSS Template</title>
+    <title>Dishcount Homepage</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/w3.css" />
@@ -22,42 +22,45 @@
         class="w3-bar w3-black w3-padding w3-card"
         style="display: flex; align-items: center"
       >
-        <a href="#home" class="w3-bar-item w3-button logo">dishcount</a>
+        <a href="./index.html" class="w3-bar-item w3-button logo">dishcount</a>
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div
           class="w3-right w3-hide-small w3-hide-medium"
           style="margin-left: auto"
         >
-          <a
-            href="#restaurants"
-            class="w3-bar-item w3-button button-header spaced"
+          <a href="./index.html" class="w3-bar-item w3-button menu-text spaced"
             >restaurants</a
           >
-          <a href="#merch" class="w3-bar-item w3-button button-header spaced"
+          <a
+            style="display: none"
+            href="./merch.html"
+            class="w3-bar-item w3-button menu-text spaced"
             >merch</a
           >
-          <a href="#city" class="w3-bar-item w3-button button-header spaced"
+          <a href="./city.html" class="w3-bar-item w3-button menu-text spaced"
             >city</a
           >
-          <a href="#faqs" class="w3-bar-item w3-button button-header spaced"
+          <a href="./faqs.html" class="w3-bar-item w3-button menu-text spaced"
             >FAQs</a
           >
           <a
-            href="#rating-guide"
-            class="w3-bar-item w3-button button-header spaced"
+            href="./ratingguide.html"
+            class="w3-bar-item w3-button menu-text spaced"
+            style="display: none"
             >rating guide</a
           >
+          <!--
           <a href="#" class="w3-bar-item w3-button button-header spaced"
             ><i class="fa-solid fa-cart-shopping"></i
           ></a>
           <a href="#" class="w3-bar-item w3-button button-header spaced"
             ><i class="fa-solid fa-magnifying-glass"></i
-          ></a>
+          ></a>-->
         </div>
         <div class="w3-right w3-hide-large" style="margin-left: auto">
           <a
             href="javascript:void(0)"
-            class="w3-bar-item w3-button button-header spaced"
+            class="w3-bar-item button-header spaced"
             onclick="w3_open()"
           >
             <i class="fa fa-bars"></i>
@@ -73,34 +76,45 @@
       <a
         href="javascript:void(0)"
         onclick="w3_close()"
-        class="w3-bar-item w3-button w3-large w3-padding-16"
-        >Close &times;</a
+        class="close-button w3-bar-item w3-xxlarge"
+        style="text-decoration: none"
       >
+        &times;</a
+      >
+      <!--
       <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"
         ><i class="fa-solid fa-cart-shopping"></i
       ></a>
       <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"
         ><i class="fa-solid fa-magnifying-glass"></i
       ></a>
+      -->
       <!-- changed -->
-      <a href="#restaurants" onclick="w3_close()" class="w3-bar-item w3-button"
+      <a
+        href="index.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
         >Restaurants</a
       >
-      <a href="#merch" onclick="w3_close()" class="w3-bar-item w3-button"
-        >Merch</a
-      >
-      <a href="#city" onclick="w3_close()" class="w3-bar-item w3-button"
+
+      <a
+        href="city.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
         >City</a
       >
       <!-- added -->
-      <a href="#faqs" onclick="w3_close()" class="w3-bar-item w3-button"
+      <a
+        href="faqs.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
         >FAQs</a
       >
-      <a href="#rating-guide" onclick="w3_close()" class="w3-bar-item w3-button"
-        >Rating Guide</a
-      >
     </nav>
-    <section id="home">
+    <section id="home" style="background-color: #f6f6f6">
       <div style="padding-top: 63px">
         <div class="video-container">
           <iframe
@@ -114,15 +128,15 @@
           ></iframe>
         </div>
       </div>
-      <div style="padding-top: 5%" class="flex-container padding-sides-5">
+      <!--<div style="padding-top: 5%" class="flex-container padding-sides-5">
         <div>
           <img
-            class="w3-image roundsquare"
+            class="w3-image roundsquare margin-bot-2rem"
             src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
           />
-          <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2 class="padding-top-small">Standouts</h2>
-            <p>
+          <div class="padding-sides-xsmall">
+            <h2 class="section-header">Standouts</h2>
+            <p class="body-text">
               This section highlights must-visit spots that go beyond the
               ordinary. These restaurants, cafes, and eateries have that special
               something, be it a signature dish, unique ambiance, or exceptional
@@ -134,12 +148,12 @@
         </div>
         <div>
           <img
-            class="w3-image roundsquare"
+            class="w3-image roundsquare margin-bot-2rem"
             src="./img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2 class="padding-top-small">Casual Joints</h2>
-            <p>
+            <h2 class="section-header">Casual Joints</h2>
+            <p class="body-text">
               Looking for a laid-back spot with fantastic food? Here, you'll
               find friendly, fuss-free dining options perfect for any occasion.
               Whether you’re grabbing a quick lunch, meeting friends, or
@@ -151,12 +165,12 @@
         </div>
         <div>
           <img
-            class="w3-image roundsquare"
+            class="w3-image roundsquare margin-bot-2rem"
             src="./img/di-bella-coffee-s1-VmA26BIc-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2 class="padding-top-small">Coffee and Tea</h2>
-            <p>
+            <h2 class="section-header">Coffee and Tea</h2>
+            <p class="body-text">
               From indie coffee shops to elegant tea houses, this is all about
               the best places to get your caffeine fix and indulge in tea
               culture. Find spots known for expertly crafted brews,
@@ -168,12 +182,12 @@
         </div>
         <div>
           <img
-            class="w3-image roundsquare"
+            class="w3-image roundsquare margin-bot-2rem"
             src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2 class="padding-top-small">Bars</h2>
-            <p>
+            <h2 class="section-header">Bars</h2>
+            <p class="body-text">
               Here is your guide to the top spots for a great night out. Whether
               you're in the mood for a lively cocktail lounge, a trendy craft
               brewery, or a classic pub with a twist, you'll find it here.
@@ -184,12 +198,12 @@
         </div>
         <div>
           <img
-            class="w3-image roundsquare"
+            class="w3-image roundsquare margin-bot-2rem"
             src="./img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2 class="padding-top-small">Fine Dining</h2>
-            <p>
+            <h2 class="section-header">Fine Dining</h2>
+            <p class="body-text">
               Explore the pinnacle of culinary artistry with restaurants that
               turn meals into unforgettable experiences. From multi-course
               tasting menus to elegantly plated dishes, these establishments
@@ -200,12 +214,12 @@
         </div>
         <div>
           <img
-            class="w3-image roundsquare"
+            class="w3-image roundsquare margin-bot-2rem"
             src="./img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
           />
           <div class="padding-sides-xsmall padding-vertical-xsmall">
-            <h2 class="padding-top-small">Street Food</h2>
-            <p>
+            <h2 class="section-header">Street Food</h2>
+            <p class="body-text">
               For those who love bold flavors on a budget, this section
               highlights vibrant food trucks, food stalls, and hidden gems
               serving authentic street eats. These are the spots to find quick
@@ -216,18 +230,627 @@
             </p>
           </div>
         </div>
+      </div> -->
+      <div style="margin-top: 5%" class="card-container">
+        <a class="card-child">
+          <div class="w3-black card w3-hover-white">
+            <img
+              class="w3-image card-image"
+              src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
+            />
+            <div class="card-content">
+              <h2 class="card-header tight-line">Standouts</h2>
+              <p
+                class="card-subhead small-caps hide-small"
+                style="display: inline"
+              >
+                spots going above and beyond.
+              </p>
+              <p class="body-text w3-hide-medium w3-hide-small">
+                These restaurants, cafes, and eateries have that special
+                something, be it a signature dish, unique ambiance, or
+                exceptional service, that makes them truly memorable. These are
+                the places you’ll want to tell your friends about after one
+                bite, sip, or experience.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="card-child">
+          <div class="w3-black card w3-hover-white">
+            <img
+              class="w3-image card-image"
+              src="./img/robert-bye-Sx4u3gRaMhE-unsplash.jpg"
+            />
+            <div class="card-content">
+              <h2 class="card-header tight-line">Casual Joints</h2>
+              <p
+                class="card-subhead small-caps hide-small"
+                style="display: inline"
+              >
+                fuss-free dining
+              </p>
+              <p class="body-text w3-hide-medium w3-hide-small">
+                Whether you’re grabbing a quick lunch, meeting friends, or
+                enjoying a cozy solo meal, these joints are big on flavor and
+                light on pretense, offering up delicious food in a relaxed
+                atmosphere.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="card-child">
+          <div class="w3-black card w3-hover-white">
+            <img
+              class="w3-image card-image"
+              src="./img/di-bella-coffee-s1-VmA26BIc-unsplash.jpg"
+            />
+            <div class="card-content">
+              <h2 class="card-header tight-line">Coffee and Tea</h2>
+              <p
+                class="card-subhead small-caps hide-small"
+                style="display: inline"
+              >
+                craft beverages
+              </p>
+              <p class="body-text w3-hide-medium w3-hide-small">
+                The best places to get your caffeine fix. Find spots known for
+                expertly crafted brews, house-roasted beans, aromatic teas, and
+                pastries that pair perfectly with every cup.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="card-child">
+          <div class="w3-black card w3-hover-white">
+            <img
+              class="w3-image card-image"
+              src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+            />
+            <div class="card-content">
+              <h2 class="card-header tight-line">Bars</h2>
+              <p
+                class="card-subhead small-caps hide-small"
+                style="display: inline"
+              >
+                lovely libations
+              </p>
+              <p class="body-text w3-hide-medium w3-hide-small">
+                Whether you're in the mood for a lively cocktail lounge, a
+                trendy craft brewery, or a classic pub with a twist, you'll find
+                it here. Expect expertly mixed drinks, vibrant atmospheres, and
+                plenty of unique bar snacks and small bites to accompany the
+                evening.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="card-child">
+          <div class="w3-black card w3-hover-white">
+            <img
+              class="w3-image card-image"
+              src="./img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            />
+            <div class="card-content">
+              <h2 class="card-header tight-line">Fine Dining</h2>
+              <p
+                class="card-subhead small-caps hide-small"
+                style="display: inline"
+              >
+                unforgettable experiences
+              </p>
+              <p class="body-text w3-hide-medium w3-hide-small">
+                From multi-course tasting menus to elegantly plated dishes,
+                these establishments offer exceptional service, exquisite
+                flavors, and an ambiance that makes every meal feel like a
+                special occasion.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="card-child">
+          <div class="w3-black card w3-hover-white">
+            <img
+              class="w3-image card-image"
+              src="./img/shane-rounce-LBAEha7kxFU-unsplash.jpg"
+            />
+            <div class="card-content">
+              <h2 class="card-header tight-line">Street Food</h2>
+              <p
+                class="card-subhead small-caps hide-small"
+                style="display: inline"
+              >
+                bold flavors on a budget
+              </p>
+              <p class="body-text w3-hide-medium w3-hide-small">
+                Vibrant food trucks, stalls, and hidden gems serving authentic
+                street eats. Find quick bites and incredible local flavors,
+                whether it's a sizzling taco stand, a noodle stall, or a vendor
+                with the best dumplings in town. Perfect for foodies who love
+                exploring the city one bite at a time!
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
-    <section id="restaurants">
+    <section class="restaurant-section" style="background-color: #f6f6f6">
+      <h1 class="section-header">Restaurants</h1>
+      <div class="">
+        <div class="search-container">
+          <!--style="padding: 10px; border-radius: 1rem"-->
+          <div style="text-overflow: ellipsis">
+            <input
+              type="text"
+              id="searchInput"
+              class="w3-input body-text"
+              placeholder="Search by name or description..."
+              oninput="filterRestaurants()"
+            />
+          </div>
+          <div class="">
+            <select
+              id="cuisineFilter"
+              class="w3-select body-text"
+              onchange="filterRestaurants()"
+            >
+              <option value="">All Cuisines</option>
+              <option value="italian">Fine Dining</option>
+              <option value="casual">Casual</option>
+              <option value="seafood">Bar</option>
+              <option value="seafood">Coffee and Tea</option>
+              <!-- Add more cuisine options as needed -->
+            </select>
+          </div>
+          <div class="">
+            <select
+              id="sortSelect"
+              class="w3-select body-text"
+              onchange="sortRestaurants()"
+            >
+              <option value="name-asc">Sort: Name (A-Z)</option>
+              <option value="name-desc">Sort: Name (Z-A)</option>
+              <option value="rating-desc">Sort: Rating (High-Low)</option>
+              <option value="distance-asc">Sort: Distance (Near-Far)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Your existing restaurant card container stays the same -->
+      <div class="restaurant-card-container" id="restaurantContainer">
+        <!-- Sol y Sazón -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/tony-rocket-kj_KCiNffYI-unsplash.jpg"
+            alt="steak with plantains and rice"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Sol y Sazón</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★★★</span>
+              <span style="display: none" class="rating-number">5</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">casual</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">0.5 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Vibrant Latin American cuisine featuring grilled meats, plantains,
+              and authentic flavors in a lively atmosphere.
+            </p>
+          </div>
+        </div>
+
+        <!-- The Urban Table -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/jason-leung-poI7DelFiVA-unsplash.jpg"
+            alt="restaurant tables"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">The Urban Table</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★★★</span>
+              <span style="display: none" class="rating-number">5</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">fine dining</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">1.2 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Elegant contemporary dining with seasonal tasting menus and an
+              extensive wine selection in a sophisticated urban setting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ciao Bella -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/eduardo-roda-lopes-mNefYU7uRbk-unsplash.jpg"
+            alt="plate of steak, eggs, and tomato"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Ciao Bella</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★★☆</span>
+              <span style="display: none" class="rating-number">4</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">fine dining</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">0.8 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Authentic Italian cuisine with handmade pastas, wood-fired pizzas,
+              and an intimate trattoria atmosphere.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ember & Ash -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg"
+            alt="baked fish on table"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Ember & Ash</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">casual</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">1.5 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Rustic wood-fired cuisine featuring seasonal ingredients with a
+              focus on grilled meats and vegetables.
+            </p>
+          </div>
+        </div>
+
+        <!-- The Breakfast Nook -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/anthony-delanoix-OGC3l73HT5Q-unsplash.jpg"
+            alt="pancakes and syrup"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">The Breakfast Nook</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">casual</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">0.7 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Cozy all-day breakfast spot famous for fluffy pancakes, creative
+              omelets, and bottomless coffee in a homey atmosphere.
+            </p>
+          </div>
+        </div>
+
+        <!-- Morning Roast Café -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/mateusz-zatorski-vXYglqFX01Q-unsplash.jpg"
+            alt="table with bread, jams and salads"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Morning Roast Café</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">casual</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">1.0 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Artisanal coffee house serving specialty brews, fresh pastries,
+              and light lunches with a focus on organic ingredients.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sakura Lounge -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/masaaki-komori-Yb5VB9id0As-unsplash.jpg"
+            alt="rice and soup"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Sakura Lounge</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">casual</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">1.8 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Authentic Japanese cuisine featuring sushi, ramen, and
+              izakaya-style small plates in a modern minimalist setting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Schwarma Stop -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/suad-kamardeen-3lnsCAQm23U-unsplash.jpg"
+            alt="skewer of meat with tomato"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Schwarma Stop</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">street food</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">0.4 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Quick-service Middle Eastern street food specializing in flavorful
+              schwarma, falafel, and fresh-made pita bread.
+            </p>
+          </div>
+        </div>
+
+        <!-- Golden Harvest -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/john-vid-m0H2RRgt-Bk-unsplash.jpg"
+            alt="edemame bowl"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Golden Harvest</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★☆☆☆</span>
+              <span style="display: none" class="rating-number">2</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">casual</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">2.1 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Pan-Asian fusion restaurant offering a mix of Chinese, Thai, and
+              Vietnamese dishes with vegetarian-friendly options.
+            </p>
+          </div>
+        </div>
+
+        <!-- Smoke & Barrel -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/eaters-collective-ESmxug33C0c-unsplash.jpg"
+            alt="table with drink and hot dish"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Smoke & Barrel</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">fine dining</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">1.3 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Upscale barbecue and whiskey bar featuring slow-smoked meats,
+              craft cocktails, and an extensive bourbon selection.
+            </p>
+          </div>
+        </div>
+
+        <!-- Taco Tuesdays -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/micheile-henderson-Hn_GXIIoJ5s-unsplash.jpg"
+            alt="tacos"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">taco tuesdays</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★☆☆☆</span>
+              <span style="display: none" class="rating-number">2</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">street food</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">0.9 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Lively taqueria serving authentic Mexican street tacos with
+              homemade tortillas and a variety of salsas and toppings.
+            </p>
+          </div>
+        </div>
+
+        <!-- Danish Comfort -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/nick-karvounis-6qVskOfkgZY-unsplash.jpg"
+            alt="potatoes cooking behind counter"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Danish Comfort</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">street food</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">1.6 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Scandinavian-inspired street food featuring open-faced sandwiches,
+              meatballs, and traditional Danish pastries.
+            </p>
+          </div>
+        </div>
+
+        <!-- The Lantern Room -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/adam-jaime-dmkmrNptMpw-unsplash.jpg"
+            alt="a glass of whisky"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">The Lantern Room</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">bar</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">0.6 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Intimate cocktail bar with a speakeasy vibe, specializing in craft
+              cocktails and small plates with Asian influences.
+            </p>
+          </div>
+        </div>
+
+        <!-- Firefly Alley -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/adam-wilson-6UIonphZA5o-unsplash.jpg"
+            alt="bottles behind bar"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Firefly Alley</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★☆☆</span>
+              <span style="display: none" class="rating-number">3</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">bar</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">1.4 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Lively neighborhood bar with creative craft cocktails, local
+              beers, and a menu of elevated bar snacks and shareable plates.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speakeasy Lounge -->
+        <div class="restaurant-card w3-black w3-hover-white">
+          <img
+            src="./img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
+            alt="bottles behind bar"
+            class="restaurant-image"
+          />
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h3 class="restaurant-name card-header">Speakeasy Lounge</h3>
+            </div>
+            <div class="restaurant-info">
+              <span class="stars info-item">★★★★★</span>
+              <span style="display: none" class="rating-number">5</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">$$$$</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">bar</span>
+              <span class="w3-hide-small">|</span>
+              <span class="info-item w3-hide-small">0.3 miles</span>
+            </div>
+            <p class="restaurant-description body-text w3-hide-small">
+              Prohibition-era themed cocktail lounge with live jazz, vintage
+              decor, and an extensive menu of classic and original craft
+              cocktails.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
+    <section id="restaurants" style="background-color: #f6f6f6">
       <div>
         <h1
-          class="w3-center bigcaps"
+          class="w3-center caps-header"
           style="padding-bottom: 6vh; padding-top: 5%"
         >
           standouts
         </h1>
         <div class="w3-padding-large flex-row">
-          <!-- carousel -->
+          <!-- carousel 
           <div class="padding-sides-5">
             <i
               onclick="prevDiv()"
@@ -236,7 +859,7 @@
             ></i>
           </div>
           <div class="overlay-container" style="width: 50%">
-            <!-- begin carousel slide show -->
+            <!-- begin carousel slide show 
             <div
               class="mySlides overlay-container bigcaps"
               style="
@@ -325,10 +948,10 @@
               />
               <div class="text-overlay">heritage table</div>
             </div>
-            <!-- end carousel slide show -->
+            <!-- end carousel slide show 
 
-            <!-- begin carousel thumbnail -->
-            <!-- add thumbnail buttons for selecting a slide to show -->
+            <!-- begin carousel thumbnail 
+            <!-- add thumbnail buttons for selecting a slide to show 
           </div>
           <div class="padding-sides-5">
             <i
@@ -387,8 +1010,8 @@
         </h1>
 
         <!-- add sortable table -->
-        <!-- step 1: create a table with 4 columns -->
-        <!-- step 2: add javascrip and jquery to make the table sortable -->
+      <!-- step 1: create a table with 4 columns -->
+      <!-- step 2: add javascrip and jquery to make the table sortable 
         <div
           style="
             height: 650px;
@@ -759,80 +1382,80 @@
           <div class="padding-sides-xsmall padding-vertical-xsmall"></div>
         </div>
       </div>
-      <!--modals for lightbox grid-->
+      <!--modals for lightbox grid
       <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-        <!-- add close button-->
+        <!-- add close button
         <span
           class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
           style="cursor: pointer"
           >&times;</span
         >
-        <!-- add modal background image -->
+        <!-- add modal background image 
         <div class="w3-modal-content w3-animate-zoom">
           <h4 class="w3-center">T-Shirt</h4>
           <img src="./img/dishcount-t-shirt.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
-        <!-- add close button-->
+        <!-- add close button
         <span
           class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
           style="cursor: pointer"
           >&times;</span
         >
-        <!-- add modal background image -->
+        <!-- add modal background image 
         <div class="w3-modal-content w3-animate-zoom">
           <h4 class="w3-center">Mug</h4>
           <img src="./img/dishcount-mug.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
-        <!-- add close button-->
+        <!-- add close button
         <span
           class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
           style="cursor: pointer"
           >&times;</span
         >
-        <!-- add modal background image -->
+        <!-- add modal background image 
         <div class="w3-modal-content w3-animate-zoom">
           <h4 class="w3-center">Keychain</h4>
           <img src="./img/dishcount-keychain.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
-        <!-- add close button-->
+        <!-- add close button
         <span
           class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
           style="cursor: pointer"
           >&times;</span
         >
-        <!-- add modal background image -->
+        <!-- add modal background image 
         <div class="w3-modal-content w3-animate-zoom">
           <h4 class="w3-center">Tote Bag</h4>
           <img src="./img/dishcount-tote-bag.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
-        <!-- add close button-->
+        <!-- add close button
         <span
           class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
           style="cursor: pointer"
           >&times;</span
         >
-        <!-- add modal background image -->
+        <!-- add modal background image 
         <div class="w3-modal-content w3-animate-zoom">
           <h4 class="w3-center">Bucket Hat</h4>
           <img src="./img/dishcount-bucket-hat.jpg" style="width: 100%" />
         </div>
       </div>
       <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
-        <!-- add close button-->
+        <!-- add close button
         <span
           class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
           style="cursor: pointer"
           >&times;</span
         >
-        <!-- add modal background image -->
+        <!-- add modal background image 
         <div class="w3-modal-content w3-animate-zoom">
           <h4 class="w3-center">Sweatshirt</h4>
           <img src="./img/dishcount-sweatshirt.jpg" style="width: 100%" />
@@ -977,13 +1600,13 @@
       <!-- accordion -->
       <!-- step 1: add accordion button -->
       <!-- step 2: add accordion content -->
-      <!-- step 3: add accordion javascript in <script> below -->
+      <!-- step 3: add accordion javascript in <script> below
       <h1 class="bigcaps w3-center" style="padding-bottom: 1%">faqs</h1>
       <div class="w3-content">
-        <!-- create an area to hold both accordion button and content -->
+        <!-- create an area to hold both accordion button and content 
         <div id="first-accordian" class="padding-vertical-bottom">
           <!-- add accordion button here -->
-          <!-- set button to 'accordion1' below -->
+      <!-- set button to 'accordion1' below 
           <button
             onclick="myAccordion('accordion1')"
             class="w3-button w3-block w3-black w3-left-align roundrectangle"
@@ -996,7 +1619,7 @@
               ></i>
             </h4>
           </button>
-          <!-- add accordion content here -->
+          <!-- add accordion content here 
           <div id="accordion1" class="w3-hide w3-container">
             <p>
               See our <a href="#rating-guide">Rating Guide</a> for a detailed
@@ -1016,8 +1639,8 @@
           </div>
         </div>
         <!-- repeat the steps to create another accordion button and content here -->
-        <!-- make sure set the button id to 'accordion2' below -->
-        <!-- each button id should be unique -->
+      <!-- make sure set the button id to 'accordion2' below -->
+      <!-- each button id should be unique 
         <div id="second-accordian" class="padding-vertical-bottom">
           <button
             onclick="myAccordion('accordion2')"
@@ -1227,9 +1850,14 @@
           </tr>
         </table>
       </div>
+      -->
     </section>
-    <footer class="w3-center w3-black w3-padding-16">
-      <a href="#home" class="w3-button w3-light-grey"
+
+    <footer class="body-text w3-center w3-black w3-padding-16">
+      <a
+        href="#home"
+        class="w3-button w3-light-grey"
+        style="border-radius: 100px"
         ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
       >
       <div class="w3-xlarge w3-section">
@@ -1422,5 +2050,129 @@
       src="https://kit.fontawesome.com/401f46c6c4.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      //SORT AND SEARCH ADDED FROM DS
+      // Enhanced filter function with cuisine support
+
+      function filterRestaurants() {
+        const searchTerm = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const cuisineFilter = document
+          .getElementById("cuisineFilter")
+          .value.toLowerCase();
+        const cards = document.querySelectorAll(".restaurant-card");
+
+        cards.forEach((card) => {
+          const name = card
+            .querySelector(".restaurant-name")
+            .textContent.toLowerCase();
+          const description =
+            card
+              .querySelector(".restaurant-description")
+              ?.textContent.toLowerCase() || "";
+          const cuisine = card
+            .querySelector(".restaurant-info")
+            .textContent.toLowerCase();
+
+          // Check search term match
+          const searchMatch =
+            searchTerm === "" ||
+            name.includes(searchTerm) ||
+            description.includes(searchTerm);
+
+          // Check cuisine match
+          const cuisineMatch =
+            cuisineFilter === "" || cuisine.includes(cuisineFilter);
+
+          // Show/hide based on both filters
+          if (searchMatch && cuisineMatch) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+
+      // Sort function remains the same as before
+      function sortRestaurants() {
+        const sortValue = document.getElementById("sortSelect").value;
+        const container = document.getElementById("restaurantContainer");
+        const cards = Array.from(
+          document.querySelectorAll(
+            '.restaurant-card:not([style*="display: none"])'
+          )
+        );
+
+        cards.sort((a, b) => {
+          switch (sortValue) {
+            case "name-asc":
+              return a
+                .querySelector(".restaurant-name")
+                .textContent.localeCompare(
+                  b.querySelector(".restaurant-name").textContent
+                );
+            case "name-desc":
+              return b
+                .querySelector(".restaurant-name")
+                .textContent.localeCompare(
+                  a.querySelector(".restaurant-name").textContent
+                );
+            case "rating-desc":
+              return (
+                parseFloat(b.querySelector(".rating-number").textContent) -
+                parseFloat(a.querySelector(".rating-number").textContent)
+              );
+            case "distance-asc":
+              return (
+                parseFloat(
+                  a
+                    .querySelector(".restaurant-info")
+                    .textContent.match(/(\d+\.?\d*) miles/)[1]
+                ) -
+                parseFloat(
+                  b
+                    .querySelector(".restaurant-info")
+                    .textContent.match(/(\d+\.?\d*) miles/)[1]
+                )
+              );
+            default:
+              return 0;
+          }
+        });
+
+        // Re-append only visible cards to maintain filter
+        cards.forEach((card) => container.appendChild(card));
+      }
+
+      // Auto-populate cuisine filter options
+      document.addEventListener("DOMContentLoaded", function () {
+        const cuisineOptions = new Set();
+        document.querySelectorAll(".restaurant-card").forEach((card) => {
+          const cuisineText =
+            card.querySelector(".restaurant-info").textContent;
+          // Extract cuisine type - adjust this regex based on your actual format
+          const cuisineMatch = cuisineText.match(/\|\s*([^|]+)\s*\|/);
+          if (cuisineMatch && cuisineMatch[1]) {
+            cuisineOptions.add(cuisineMatch[1].trim().toLowerCase());
+          }
+        });
+
+        const cuisineFilter = document.getElementById("cuisineFilter");
+        Array.from(cuisineOptions)
+          .sort()
+          .forEach((cuisine) => {
+            const option = document.createElement("option");
+            option.value = cuisine;
+            option.textContent =
+              cuisine.charAt(0).toUpperCase() + cuisine.slice(1);
+            cuisineFilter.appendChild(option);
+          });
+
+        // Initialize
+        filterRestaurants();
+        sortRestaurants();
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurants</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/w3.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mhr1vgg.css" />
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+  </head>
+  <body style="background-color: #f6f6f6">
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-black w3-padding w3-card"
+        style="display: flex; align-items: center"
+      >
+        <a href="./index.html" class="w3-bar-item w3-button logo">dishcount</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div
+          class="w3-right w3-hide-small w3-hide-medium"
+          style="margin-left: auto"
+        >
+          <a href="./index.html" class="w3-bar-item w3-button menu-text spaced"
+            >restaurants</a
+          >
+          <a
+            style="display: none"
+            href="./merch.html"
+            class="w3-bar-item w3-button menu-text spaced"
+            >merch</a
+          >
+          <a href="./city.html" class="w3-bar-item w3-button menu-text spaced"
+            >city</a
+          >
+          <a href="./faqs.html" class="w3-bar-item w3-button menu-text spaced"
+            >FAQs</a
+          >
+          <a
+            href="./ratingguide.html"
+            class="w3-bar-item w3-button menu-text spaced"
+            style="display: none"
+            >rating guide</a
+          >
+          <!--
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="#" class="w3-bar-item w3-button button-header spaced"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>-->
+        </div>
+        <div class="w3-right w3-hide-large" style="margin-left: auto">
+          <a
+            href="javascript:void(0)"
+            class="w3-bar-item button-header spaced"
+            onclick="w3_open()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right"
+      id="mySidebar"
+      style="display: none"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="close-button w3-bar-item w3-xxlarge"
+        style="text-decoration: none"
+      >
+        &times;</a
+      >
+      <!--
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-cart-shopping"></i
+      ></a>
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"
+        ><i class="fa-solid fa-magnifying-glass"></i
+      ></a>
+      -->
+      <!-- changed -->
+      <a
+        href="index.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
+        >Restaurants</a
+      >
+
+      <a
+        href="city.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
+        >City</a
+      >
+      <!-- added -->
+      <a
+        href="faqs.html"
+        onclick="w3_close()"
+        class="menu-text w3-bar-item"
+        style="text-decoration: none"
+        >FAQs</a
+      >
+    </nav>
+    <section
+      id="faqs"
+      style="padding-top: max(80px, 5%); padding-bottom: max(50px, 5%)"
+      class="city-content"
+    >
+      <!-- accordion -->
+      <!-- step 1: add accordion button -->
+      <!-- step 2: add accordion content -->
+      <!-- step 3: add accordion javascript in <script> below -->
+      <h1 class="section-header" style="padding-bottom: 1%">FAQs</h1>
+
+      <div class="faq-accordion">
+        <!-- Rating Question -->
+        <div class="accordion-item">
+          <div class="accordion-header card-header">
+            <h3>How do you decide on a rating for each restaurant?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content body-copy">
+            <p>
+              See our <a href="#rating-guide">Rating Guide</a> for a detailed
+              breakdown of our criteria for rating restaurants. Our team
+              carefully curates the list of restaurants, cafes, and eateries to
+              ensure they meet a high standard of quality and appeal. We
+              evaluate each location based on several factors, including the
+              quality and presentation of the food, the level of service
+              provided, the ambiance and atmosphere of the establishment, and
+              the overall dining experience. Additionally, we actively seek out
+              user feedback and recommendations from our community to keep our
+              listings diverse, fresh, and relevant to our audience's tastes.
+              Whether it's a hidden gem or a popular spot, we aim to feature
+              places that offer something special and memorable for every type
+              of diner.
+            </p>
+          </div>
+        </div>
+
+        <!-- Restaurant Selection Question -->
+        <div class="accordion-item">
+          <div class="accordion-header card-header">
+            <h3>
+              How do you choose the restaurants and cafes featured on the site?
+            </h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content body-copy">
+            <p>
+              We take a comprehensive approach when selecting the best dining
+              spots to feature on our website. Our team assesses a variety of
+              key elements, such as the quality and flavor of the food, the
+              attentiveness and friendliness of the service, the atmosphere and
+              decor of the space, and the overall dining experience. We also
+              look at the consistency of these factors over time, ensuring that
+              each restaurant delivers a great experience to every guest. To
+              keep our content up to date and diverse, we also take into account
+              feedback from our users, constantly refreshing our listings to
+              reflect new discoveries and popular trends. This ensures our
+              reviews remain relevant and provide our readers with a true
+              reflection of the local dining scene.
+            </p>
+          </div>
+        </div>
+
+        <!-- User Reviews Question -->
+        <div class="accordion-item">
+          <div class="accordion-header card-header">
+            <h3>Can I leave my own reviews or ratings?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content body-copy">
+            <p>
+              At this time, we do not have a platform for user-submitted reviews
+              directly on our website. However, we highly value the experiences
+              and opinions of our readers! We encourage you to share your
+              thoughts with us via our social media channels, where we actively
+              engage with our community. Your feedback might even be highlighted
+              in future updates or special features. We're always looking for
+              fresh perspectives and love hearing about the spots you enjoy, so
+              don't hesitate to reach out!
+            </p>
+          </div>
+        </div>
+
+        <!-- Personal Visits Question -->
+        <div class="accordion-item">
+          <div class="accordion-header card-header">
+            <h3>Are all of your reviews based on personal visits?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content body-copy">
+            <p>
+              Yes, all of our reviews are based on first-hand visits from our
+              team. We believe in offering honest and reliable insights,
+              ensuring that every review accurately reflects the experience you
+              can expect when visiting these locations. Our team personally
+              dines at each restaurant, cafe, and eatery we feature, so we can
+              provide you with authentic feedback on food quality, service,
+              ambiance, and overall experience. We aim to give you a clear
+              picture, so you can make well-informed decisions about where to
+              eat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Recipes Question -->
+        <div class="accordion-item">
+          <div class="accordion-header card-header">
+            <h3>Do you have any recipes?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content body-copy">
+            <p>
+              While we don't provide recipes directly, many of the dishes
+              featured in our reviews can inspire your cooking adventures! For
+              some, you can find similar recipes and techniques on YouTube. We
+              recommend checking out channels that specialize in the cuisine
+              you're interested in. Many channels offer step-by-step guides for
+              recreating iconic dishes at home. A few of our favorites are
+              linked below.
+            </p>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                style="padding-top: 2%"
+                height="auto"
+                src="https://www.youtube.com/embed/xzig1sE69s0?si=0xo5HuFQdag8ekVJ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="auto"
+                style="padding-top: 2%"
+                src="https://www.youtube.com/embed/mhDJNfV7hjk?si=TYh_T0W8CsKksM9h"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="auto"
+                style="padding-top: 2%"
+                src="https://www.youtube.com/embed/jKpIpSakqD0?si=iSEH8JPtHnQn-tXu"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="w3-content">
+        <!-- create an area to hold both accordion button and content --
+        <div id="first-accordian" class="padding-vertical-bottom">
+          <!-- add accordion button here -->
+      <!-- set button to 'accordion1' below --
+          <button
+            onclick="myAccordion('accordion1')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn1"
+          >
+            <h4 class="slab-header">
+              How do you decide on a rating for each restaurant?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <!-- add accordion content here --
+          <div id="accordion1" class="w3-hide w3-container">
+            <p class="w3-black">
+              See our <a href="#rating-guide">Rating Guide</a> for a detailed
+              breakdown of our criteria for rating restaurants. Our team
+              carefully curates the list of restaurants, cafes, and eateries to
+              ensure they meet a high standard of quality and appeal. We
+              evaluate each location based on several factors, including the
+              quality and presentation of the food, the level of service
+              provided, the ambiance and atmosphere of the establishment, and
+              the overall dining experience. Additionally, we actively seek out
+              user feedback and recommendations from our community to keep our
+              listings diverse, fresh, and relevant to our audience’s tastes.
+              Whether it’s a hidden gem or a popular spot, we aim to feature
+              places that offer something special and memorable for every type
+              of diner.
+            </p>
+          </div>
+        </div>
+        <!-- repeat the steps to create another accordion button and content here -->
+      <!-- make sure set the button id to 'accordion2' below -->
+      <!-- each button id should be unique --
+        <div id="second-accordian" class="padding-vertical-bottom">
+          <button
+            onclick="myAccordion('accordion2')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn2"
+          >
+            <h4 class="slab-header">
+              How do you choose the restaurants and cafes featured on the
+              site?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <div id="accordion2" class="w3-hide w3-container">
+            <p>
+              We take a comprehensive approach when selecting the best dining
+              spots to feature on our website. Our team assesses a variety of
+              key elements, such as the quality and flavor of the food, the
+              attentiveness and friendliness of the service, the atmosphere and
+              decor of the space, and the overall dining experience. We also
+              look at the consistency of these factors over time, ensuring that
+              each restaurant delivers a great experience to every guest. To
+              keep our content up to date and diverse, we also take into account
+              feedback from our users, constantly refreshing our listings to
+              reflect new discoveries and popular trends. This ensures our
+              reviews remain relevant and provide our readers with a true
+              reflection of the local dining scene.
+            </p>
+          </div>
+        </div>
+        <div id="third-accordian" class="padding-vertical-bottom">
+          <button
+            onclick="myAccordion('accordion3')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn3"
+          >
+            <h4 class="slab-header">
+              Can I leave my own reviews or ratings?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <div id="accordion3" class="w3-hide w3-container">
+            <p>
+              At this time, we do not have a platform for user-submitted reviews
+              directly on our website. However, we highly value the experiences
+              and opinions of our readers! We encourage you to share your
+              thoughts with us via our social media channels, where we actively
+              engage with our community. Your feedback might even be highlighted
+              in future updates or special features. We’re always looking for
+              fresh perspectives and love hearing about the spots you enjoy, so
+              don’t hesitate to reach out!
+            </p>
+          </div>
+        </div>
+        <div id="fourth-accordian" class="padding-vertical-bottom">
+          <button
+            onclick="myAccordion('accordion4')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn4"
+          >
+            <h4 class="slab-header">
+              Are all of your reviews based on personal visits?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <div id="accordion4" class="w3-hide w3-container">
+            <p>
+              Yes, all of our reviews are based on first-hand visits from our
+              team. We believe in offering honest and reliable insights,
+              ensuring that every review accurately reflects the experience you
+              can expect when visiting these locations. Our team personally
+              dines at each restaurant, cafe, and eatery we feature, so we can
+              provide you with authentic feedback on food quality, service,
+              ambiance, and overall experience. We aim to give you a clear
+              picture, so you can make well-informed decisions about where to
+              eat.
+            </p>
+          </div>
+        </div>
+        <div id="fifth-accordian" class="padding-vertical-bottom">
+          <button
+            onclick="myAccordion('accordion5')"
+            class="w3-button w3-block w3-black w3-left-align roundrectangle"
+            id="accordionBtn4"
+          >
+            <h4 class="slab-header">
+              Do you have any recipes?<i
+                class="fa-solid fa-angle-down"
+                style="padding-left: 1%"
+              ></i>
+            </h4>
+          </button>
+          <div id="accordion5" class="w3-hide w3-container">
+            <p>
+              While we don’t provide recipes directly, many of the dishes
+              featured in our reviews can inspire your cooking adventures! For
+              some, you can find similar recipes and techniques on YouTube. We
+              recommend checking out channels that specialize in the cuisine
+              you’re interested in. Many channels offer step-by-step guides for
+              recreating iconic dishes at home. A few of our favorites are
+              linked below.
+            </p>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                style="padding-top: 2%"
+                height="auto"
+                src="https://www.youtube.com/embed/xzig1sE69s0?si=0xo5HuFQdag8ekVJ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="auto"
+                style="padding-top: 2%"
+                src="https://www.youtube.com/embed/mhDJNfV7hjk?si=TYh_T0W8CsKksM9h"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-container">
+              <iframe
+                width="100%"
+                height="auto"
+                style="padding-top: 2%"
+                src="https://www.youtube.com/embed/jKpIpSakqD0?si=iSEH8JPtHnQn-tXu"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <footer class="body-text w3-center w3-black w3-padding-16">
+      <a
+        href="#home"
+        class="w3-button w3-light-grey"
+        style="border-radius: 100px"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <a
+          class="fa-brands fa-x-twitter w3-hover-opacity"
+          href="https://twitter.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-instagram w3-hover-opacity"
+          href="https://www.instagram.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-linkedin w3-hover-opacity"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-pinterest-p w3-hover-opacity"
+          href="https://www.pinterest.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+        <a
+          class="fa fa-facebook-official w3-hover-opacity my-text-decoration"
+          href="https://www.facebook.com/"
+          target="_blank"
+          style="text-decoration: none"
+        ></a>
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >Privacy Policy</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >Terms of User</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="text-decoration: none"
+          >Accessibility</a
+        >
+      </div>
+      <div>
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >1-800-123-4567</a
+        >
+        <a
+          href="#home"
+          target="_blank"
+          class="w3-hover-opacity"
+          style="padding-right: 20px; text-decoration: none"
+          >TTY: 1-800-987-6543</a
+        >
+      </div>
+      <a
+        href="#"
+        target="_blank"
+        class="fa fa-copyright w3-hover-opacity"
+        style="text-decoration: none"
+        >All Rights Reserved.</a
+      >
+    </footer>
+    <script>
+      // begin added for mobile version
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // end added for mobile version
+    </script>
+    <script>
+      // begin added for carousel
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        //setTimeout(carousel, 10000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+      function nextDiv() {
+        myIndex++;
+        if (myIndex > 3) {
+          myIndex = 0;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+      function prevDiv() {
+        myIndex--;
+        if (myIndex < 0) {
+          myIndex = 3;
+        }
+        showDivs((slideIndex = myIndex));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+    </script>
+    <script>
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+    </script>
+    <script>
+      // begin added for accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // end added for accordion
+    </script>
+    <script
+      src="https://kit.fontawesome.com/401f46c6c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.querySelectorAll(".accordion-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const item = header.parentElement;
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
