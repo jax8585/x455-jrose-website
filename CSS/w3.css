@@ -942,6 +942,7 @@ a {
   border: none;
   display: inline-block;
   padding: 8px 16px;
+  margin: 0px 4px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
@@ -1137,6 +1138,8 @@ a {
   border: none;
   display: block;
   outline: 0;
+}
+.w3-bar-item.active {
 }
 .w3-bar .w3-dropdown-hover,
 .w3-bar .w3-dropdown-click {
@@ -1871,6 +1874,11 @@ a {
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9);
 }
+.w3-button.active {
+  color: #000 !important;
+  background-color: white !important;
+  border-radius: 1000px;
+}
 .w3-transparent,
 .w3-hover-none:hover {
   background-color: transparent !important;
@@ -1991,6 +1999,7 @@ a {
   color: #000 !important;
   background-color: #ffffff !important;
 }
+
 .w3-black,
 .w3-hover-black:hover {
   color: #fff !important;

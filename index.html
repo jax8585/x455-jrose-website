@@ -28,7 +28,9 @@
           class="w3-right w3-hide-small w3-hide-medium"
           style="margin-left: auto"
         >
-          <a href="./index.html" class="w3-bar-item w3-button menu-text spaced"
+          <a
+            href="#restaurants"
+            class="w3-bar-item w3-button active menu-text spaced"
             >restaurants</a
           >
           <a
@@ -91,7 +93,7 @@
       -->
       <!-- changed -->
       <a
-        href="index.html"
+        href="#restaurants"
         onclick="w3_close()"
         class="menu-text w3-bar-item"
         style="text-decoration: none"
@@ -126,6 +128,16 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
+          <!--- <iframe
+            width="996"
+            height="560"
+            src="https://www.youtube.com/embed/giFab_w35Ws"
+            title="Delicious Food Stock Footage Royalty-Free Video #foodstockfootage #royaltyfreevideo #foodprepvideo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe> -->
         </div>
       </div>
       <!--<div style="padding-top: 5%" class="flex-container padding-sides-5">
@@ -374,7 +386,11 @@
         </a>
       </div>
     </section>
-    <section class="restaurant-section" style="background-color: #f6f6f6">
+    <section
+      id="restaurants"
+      class="restaurant-section"
+      style="background-color: #f6f6f6"
+    >
       <h1 class="section-header">Restaurants</h1>
       <div class="">
         <div class="search-container">
@@ -397,8 +413,8 @@
               <option value="">All Cuisines</option>
               <option value="italian">Fine Dining</option>
               <option value="casual">Casual</option>
-              <option value="seafood">Bar</option>
-              <option value="seafood">Coffee and Tea</option>
+              <option value="bar">Bar</option>
+              <option value="coffee-and-tea">Coffee and Tea</option>
               <!-- Add more cuisine options as needed -->
             </select>
           </div>
@@ -2071,21 +2087,20 @@
             card
               .querySelector(".restaurant-description")
               ?.textContent.toLowerCase() || "";
-          const cuisine = card
-            .querySelector(".restaurant-info")
-            .textContent.toLowerCase();
 
-          // Check search term match
+          // Extract cuisine type specifically (look for the text after the second pipe)
+          const infoText = card.querySelector(".restaurant-info").textContent;
+          const cuisine = infoText.split("|")[2].trim().toLowerCase(); // Gets "casual", "fine dining", etc.
+
+          // Check matches
           const searchMatch =
             searchTerm === "" ||
             name.includes(searchTerm) ||
             description.includes(searchTerm);
 
-          // Check cuisine match
           const cuisineMatch =
             cuisineFilter === "" || cuisine.includes(cuisineFilter);
 
-          // Show/hide based on both filters
           if (searchMatch && cuisineMatch) {
             card.style.display = "flex";
           } else {
@@ -2147,27 +2162,28 @@
 
       // Auto-populate cuisine filter options
       document.addEventListener("DOMContentLoaded", function () {
-        const cuisineOptions = new Set();
-        document.querySelectorAll(".restaurant-card").forEach((card) => {
-          const cuisineText =
-            card.querySelector(".restaurant-info").textContent;
-          // Extract cuisine type - adjust this regex based on your actual format
-          const cuisineMatch = cuisineText.match(/\|\s*([^|]+)\s*\|/);
-          if (cuisineMatch && cuisineMatch[1]) {
-            cuisineOptions.add(cuisineMatch[1].trim().toLowerCase());
-          }
-        });
-
         const cuisineFilter = document.getElementById("cuisineFilter");
-        Array.from(cuisineOptions)
-          .sort()
-          .forEach((cuisine) => {
-            const option = document.createElement("option");
-            option.value = cuisine;
-            option.textContent =
-              cuisine.charAt(0).toUpperCase() + cuisine.slice(1);
-            cuisineFilter.appendChild(option);
-          });
+
+        // Manually defined cuisine options (more reliable)
+        const cuisineOptions = [
+          "fine dining",
+          "casual",
+          "bar",
+          "coffee and tea",
+          "street food",
+        ];
+
+        // Clear existing options except "All Cuisines"
+        cuisineFilter.innerHTML = '<option value="">All Cuisines</option>';
+
+        // Add predefined options
+        cuisineOptions.forEach((cuisine) => {
+          const option = document.createElement("option");
+          option.value = cuisine;
+          option.textContent =
+            cuisine.charAt(0).toUpperCase() + cuisine.slice(1);
+          cuisineFilter.appendChild(option);
+        });
 
         // Initialize
         filterRestaurants();
